@@ -21,18 +21,17 @@ section
 section div
 {
 	position: relative;
-	width: 35%;
-	background: #adf3cc;
-	overflow: hidden;
+	width: 65%;
+  background-image:url("/max_train.jpg");
+	background-size: cover;
+	box-sizing: border-box;
+	
 }
 section div:nth-child(1)
 {
-	width: 65%;
-	/*background: #000;*/
-	background-image:url("/max_train.jpg");
-	background-size: cover;
-	/*border-right: 2px solid #fff;*/
-	box-sizing: border-box;
+	width: 35%;
+  background: #adf3cc;
+	overflow: hidden;
 }
 section div h2
 {
@@ -76,13 +75,12 @@ section div h2
 }
 
 
-
 ul {
   z-index: 30;
   position: absolute;
   list-style: none;
   font-family: 'Style Script', cursive;
-  font-size: 50px;
+  font-size: 60px;
   
   text-align: center;
   top: 32%; /*親のtopから50%*/
