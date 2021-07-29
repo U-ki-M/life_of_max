@@ -1,0 +1,30 @@
+*
+{
+	margin: 0;
+	padding: 0;
+}
+.parent {
+  height: 85vh;
+  display: flex;
+}
+.story {
+  width: 50vw;
+  height: 85vh;
+  background-color: black;
+}
+
+.title {
+  color: rgb(155, 177, 236);
+}
+
+.picture {
+  width: 50%;
+  height: 85vh;
+  background-image: url("/maxfuji.png");
+  background-size: cover;
+  background-position: center;
+}
+
+p{
+  color: rgb(163, 205, 241);
+}
