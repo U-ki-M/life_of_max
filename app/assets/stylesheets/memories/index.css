@@ -47,7 +47,7 @@ section div
 section div:nth-child(1)
 {
 	width: 25%;
-  background: #adf3cc;
+  background: darkgray;
 	overflow: hidden;
 }
 section div h2
