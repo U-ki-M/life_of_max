@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Palette+Mosaic&family=Roboto&family=Source+Sans+Pro:wght@700&family=Style+Script&family=Tourney:ital@0;1&display=swap');
+
+
+*
+{
+	margin: 0;
+	padding: 0;
+}
+
+html {
+  font-size: 65%;
+}
+@media screen and (min-width: 768px) {
+  html {
+    font-size: 80%;
+  }
+}
+@media screen and (min-width: 1024px) {
+  html {
+    font-size: 100%;
+  }
+}
+
+
+body
+{
+	font-family: 'Source Sans Pro', sans-serif;
+}
+section
+{
+	position: relative;
+	width: 100%;
+	height: 85vh;
+	display: flex;
+	overflow: hidden;
+}
+section div
+{
+	position: relative;
+	width: 75%;
+  background-image:url("/max_train.jpg");
+	background-size: cover;
+  background-position: top;
+	box-sizing: border-box;
+}
+
+section div:nth-child(1)
+{
+	width: 25%;
+  background: #adf3cc;
+	overflow: hidden;
+}
+section div h2
+{
+	position: absolute;
+	white-space: nowrap;
+}
+section div:nth-child(1) h2
+{
+	left: 100%;
+	animation: animate 90s linear infinite;
+	color: #fff;
+}
+
+section div:nth-child(2) h2
+{
+	left: 0;
+  animation: animate 90s linear infinite;
+  -webkit-text-stroke: 2px;
+	-webkit-text-stroke-color: rgb(224, 216, 216);
+	-webkit-text-fill-color: transparent;
+	
+}
+section div h2
+{
+	line-height: 145vh;
+  font-size: 8vmax;
+}
+@keyframes animate
+{
+	0%
+	{
+		transform: translateX(0);
+	}
+/*	50%
+	{
+		transform: translateX(-100%);
+	}*/
+	100%
+	{
+		transform: translateX(-100%);
+	}
+}
+
+
+ul {
+  height: 10%;
+  z-index: 30;
+  position: absolute;
+  list-style: none;
+  font-family: 'Style Script', cursive;
+  font-size: 5vmax;
+  text-align: center;
+  top: 20%; /*親のtopから50%*/
+  left: 50%; /*親のleftから50%*/
+  transform: translateY(-50%) translateX(-50%); /*子要素自体の大きさを考慮*/
+  margin: 0; /*margin:0を入れる*/
+  padding: 10px 0; /*左右のpaddingを0にする*/
+}
+
+li {
+  margin-bottom: 25px;
+}
+
+a {
+  -webkit-text-fill-color: white;
+  text-decoration: none;
+  position: relative;
+}
+
+footer {
+  width: 100%;
+  height: 15vh;
+  background-color: black;
+  border-top: solid 1px white; 
+}
