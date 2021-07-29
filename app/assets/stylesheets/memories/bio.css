@@ -6,8 +6,24 @@
 	padding: 0;
 }
 
+html {
+  font-size: 55%;
+}
+@media screen and (min-width: 768px) {
+  html {
+    font-size: 75%;
+    background-image: 60%;
+  }
+}
+@media screen and (min-width: 1024px) {
+  html {
+    font-size: 100%;
+  }
+}
+
 .bttn {
-  margin-top: 5px;
+  text-align: center;
+  margin: 20px;
   border: 0;
   line-height: 2.5;
   padding: 0 20px;
@@ -25,13 +41,12 @@
                 inset -2px -2px 3px rgba(0, 0, 0, .6);
 }
 
-.en_switch:hover,
-.jp_switch:hover {
+.bttn:hover,
+.btt{
   color: gray;
 }
 
-.en_switch:active,
-.jp_switch:active {
+.bttn:active {
   color: lightgray;
 }
 
@@ -41,34 +56,70 @@
   display: flex;
 }
 .story {
-  text-align: center;
-  width: 50vw;
+  justify-content: center;
+  width: 50%;
   height: 85vh;
   background-color: black;
+  left: 50%;
+
+}
+.text_box {
+  text-align: center;
+  margin: auto;
+  width: 75%;
+  height: auto;
 }
 
+
 .picture {
+  
   width: 50%;
   height: 85vh;
   background-image: url("/maxfuji.png");
   background-size: cover;
-  background-position: center;
+  background-position: top;
 }
 
 p{
   color: rgb(163, 205, 241);
+  font-size: 20px;
 }
 
+
 .eng,
-.en_switch,
 .en_title {
   color: white;
   font-family: 'Lobster', cursive;
 }
 
 .jpn,
-.jp_switch,
 .jp_title {
   color: white;
   font-family: 'Yusei Magic', sans-serif;
+}
+
+.eng,
+.jpn {
+  text-align: left;
+}
+
+.bttn_back,
+.bttn_gal {
+  text-align: center;
+  margin-top: 5px;
+  border: 0;
+  line-height: 2.5;
+  padding: 0 20px;
+  font-size: 1rem;
+  text-align: center;
+  color: #fff;
+  text-shadow: 1px 1px 1px #000;
+  border-radius: 10px;
+  background-color:lightgray;
+  background-image: linear-gradient(to top left,
+                                    rgba(0, 0, 0, .2),
+                                    rgba(0, 0, 0, .2) 30%,
+                                    rgba(0, 0, 0, 0));
+  box-shadow: inset 2px 2px 3px rgba(255, 255, 255, .6),
+                inset -2px -2px 3px rgba(0, 0, 0, .6);
 }
