@@ -1,0 +1,13 @@
+@keyframes gradual {
+  0% {
+    color: rgb(196, 169, 196);
+  }
+  100% {
+    color: rgb(249, 250, 171);
+  }
+}
+.sample {
+  animation-name: gradual;
+  animation-duration: 30s;
+  animation-iteration-count: infinite;
+}

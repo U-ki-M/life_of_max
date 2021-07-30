@@ -4,6 +4,7 @@ Rails.application.routes.draw do
   resources :memories do
     collection do
      get 'bio'
+     get 'gallery'
     end
   end
 end
