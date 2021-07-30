@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Lobster&family=Yusei+Magic&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Otomanopee+One&family=Dancing+Script&family=Lobster&family=Yusei+Magic&display=swap');
 
 *
 {
@@ -23,6 +23,7 @@ html {
 }
 
 .bttn {
+  font-family: 'Otomanopee One', sans-serif;
   text-align: center;
   margin: 20px;
   border: 0;
