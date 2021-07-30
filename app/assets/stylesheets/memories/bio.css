@@ -29,10 +29,10 @@ html {
   padding: 0 20px;
   font-size: 1rem;
   text-align: center;
-  color: #fff;
+  color: lightslategray;
   text-shadow: 1px 1px 1px #000;
   border-radius: 10px;
-  background-color:lightgray;
+  background-color: transparent;
   background-image: linear-gradient(to top left,
                                     rgba(0, 0, 0, .2),
                                     rgba(0, 0, 0, .2) 30%,
@@ -41,13 +41,16 @@ html {
                 inset -2px -2px 3px rgba(0, 0, 0, .6);
 }
 
-.bttn:hover,
-.btt{
-  color: gray;
+.bttn:hover {
+  color: rgb(11, 166, 187);
+  background-color: rgba(7, 72, 105, 0.4);
+  box-shadow: 0 0 6px rgb(250, 246, 193);
+  transition: background-color .7s, color .9s, box-shadow .7s;
 }
 
 .bttn:active {
-  color: lightgray;
+  color: white;
+  background-color: lightsteelblue;
 }
 
 
@@ -103,23 +106,3 @@ p{
   text-align: left;
 }
 
-.bttn_back,
-.bttn_gal {
-  text-align: center;
-  margin-top: 5px;
-  border: 0;
-  line-height: 2.5;
-  padding: 0 20px;
-  font-size: 1rem;
-  text-align: center;
-  color: #fff;
-  text-shadow: 1px 1px 1px #000;
-  border-radius: 10px;
-  background-color:lightgray;
-  background-image: linear-gradient(to top left,
-                                    rgba(0, 0, 0, .2),
-                                    rgba(0, 0, 0, .2) 30%,
-                                    rgba(0, 0, 0, 0));
-  box-shadow: inset 2px 2px 3px rgba(255, 255, 255, .6),
-                inset -2px -2px 3px rgba(0, 0, 0, .6);
-}
