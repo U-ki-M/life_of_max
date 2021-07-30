@@ -1,10 +1,54 @@
-@import url('https://fonts.googleapis.com/css2?family=Palette+Mosaic&family=Roboto&family=Source+Sans+Pro:wght@700&family=Style+Script&family=Tourney:ital@0;1&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Asset&family=Rock+Salt&display&family=Palette+Mosaic&family=Roboto&family=Source+Sans+Pro:wght@700&family=Style+Script&family=Tourney:ital@0;1&display=swap');
 
 *
 {
 	margin: 0;
 	padding: 0;
+}
+
+@keyframes gradual {
+  0% {
+    color: rgb(253, 202, 168);
+  }
+   25% {
+    color: rgb(121, 230, 144);
+  }
+  50% {
+    color: rgb(168, 200, 238);
+  }
+ 75% {
+    color: rgb(250, 171, 239);
+  }
+  100% {
+    color: rgb(249, 250, 171);
+  }
+}
+
+header {
+	width: 100%;
+	height: 10vh;
+	background-color:rgba(255, 255, 255, 0.7);
+	border-bottom: solid 1px black ;
+}
+
+.head_t {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100%;
+}
+.head_title {
+	text-shadow:
+    2px 0 0 black,
+    0 2px 0 black,
+    -2px 0 0 black,
+    0 -2px 0 black;
+	font-family: 'Asset', cursive;
+	font-size: x-large;
+  text-decoration: none;
+	animation-name: gradual;
+  animation-duration: 30s;
+  animation-iteration-count: infinite;
 }
 
 html {
@@ -25,13 +69,16 @@ html {
 body
 {
 	font-family: 'Source Sans Pro', sans-serif;
+	background-image:url("/max.kyoto.jpeg");
+	background-size: cover;
+	background-position: center;
 }
 section
 {
 	position: relative;
-	background-color: black;
+	background-color: transparent;
 	width: 100%;
-	height: 85vh;
+	height: 80vh;
 	display: flex;
 	overflow: hidden;
 }
@@ -39,9 +86,7 @@ section div
 {
 	position: relative;
 	width: 75%;
-  background-image:url("/max_train.jpg");
-	background-size: cover;
-  background-position: top;
+  background: transparent;
 	box-sizing: border-box;
 	border-top-left-radius: 20px;
   border-top-right-radius: 20px;
@@ -52,7 +97,8 @@ section div
 section div:nth-child(1)
 {
 	width: 25%;
-  background: darkgray;
+	height: 80vh;
+  background-color:rgba(116, 250, 243, 0.55);
 	overflow: hidden;
 	border-top-left-radius: 20px;
   border-top-right-radius: 20px;
@@ -69,7 +115,6 @@ section div:nth-child(1) h2
 {
 	left: 100%;
 	animation: animate 90s linear infinite;
-	color: #fff;
 }
 
 section div:nth-child(2) h2
@@ -78,13 +123,14 @@ section div:nth-child(2) h2
   animation: animate 90s linear infinite;
   -webkit-text-stroke: 2px;
 	-webkit-text-stroke-color: rgb(224, 216, 216);
-	-webkit-text-fill-color: transparent;
+	-webkit-text-fill-color: white;
 	
 }
 section div h2
 {
+	font-family: 'Asset', cursive;
 	line-height: 20vh;
-  font-size: 7vmax;
+  font-size: 2em;
 }
 @keyframes animate
 {
@@ -102,47 +148,43 @@ section div h2
 	}
 }
 
-
 .menu {
-  height: 10%;
+	height: 50%;
   z-index: 30;
   position: absolute;
   list-style: none;
   font-family: 'Style Script', cursive;
   font-size: 4vmax;
   text-align: center;
-  top: 30%; /*親のtopから50%*/
-  left: 50%; /*親のleftから50%*/
-  transform: translateY(-50%) translateX(-50%); /*子要素自体の大きさを考慮*/
-  margin: 0; /*margin:0を入れる*/
-  padding: 10px 0; /*左右のpaddingを0にする*/
+  top: 50%; 
+  left: 50%; 
+  transform: translateY(-50%) translateX(-50%);
 }
 
-.lis {
-	width: 50%;
-  margin-bottom: 20px;
-	text-shadow: 0 3px 3px linen;
+.menu_link {
+	padding-bottom: 5px;
+	text-shadow: 0 3px 3px rgb(59, 44, 194);
+	color: white;
+  text-decoration: none;
+	display: inline-block;
+	overflow: scroll;
 }
 
-.lis:hover {
+.menu_link:hover {
+	color: rgb(236, 236, 158);
 	text-shadow: 0 8px 5px darkslateblue;
-	transition: text-shadow .9s;
+	transition: text-shadow .9s, color .7s;
 }
 
-.lis:active {
+.menu_link:active {
 	text-shadow: 0 3px 3px linen;
 	transition: text-shadow .1s;
 }
 
-a {
-  -webkit-text-fill-color: white;
-  text-decoration: none;
-  position: relative;
-}
 
 footer {
   width: 100%;
-  height: 15vh;
-  background-color: rgb(53, 46, 46);
-  border-top: solid 1px white; 
+  height: 10vh;
+  background-color:rgba(255, 255, 255, 0.6);
+  border-top: solid 1px black; 
 }
