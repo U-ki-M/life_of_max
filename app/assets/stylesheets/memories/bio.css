@@ -1,30 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Otomanopee+One&family=Dancing+Script&family=Lobster&family=Yusei+Magic&display=swap');
+
 *
 {
 	margin: 0;
 	padding: 0;
 }
+
+
+html {
+  font-size: 55%;
+}
+@media screen and (min-width: 768px) {
+  html {
+    font-size: 75%;
+    background-image: 60%;
+  }
+}
+@media screen and (min-width: 1024px) {
+  html {
+    font-size: 100%;
+  }
+}
+
+.bttn {
+  font-family: 'Otomanopee One', sans-serif;
+  text-align: center;
+  margin: 20px;
+  border: 0;
+  line-height: 2.5;
+  padding: 0 20px;
+  font-size: 1rem;
+  text-align: center;
+  color: lightslategray;
+  text-shadow: 1px 1px 1px #000;
+  border-radius: 10px;
+  background-color: transparent;
+  box-shadow: inset 0 0 3px rgba(255, 255, 255, .6);
+                
+}
+
+.bttn:hover {
+  color: rgba(196, 233, 238, 0.863);
+  background-color: rgba(7, 72, 105, 0.7);
+  box-shadow: 0 0 6px rgb(250, 246, 193);
+  transition: background-color .6s, color .9s, box-shadow .7s;
+}
+
+.bttn:active {
+  color: white;
+  background-color: lightsteelblue;
+  transition: background-color 0s;
+}
+
+
 .parent {
-  height: 85vh;
+  width: 100%;
+  height: 80vh;
   display: flex;
 }
 .story {
-  width: 50vw;
-  height: 85vh;
+  justify-content: center;
+  width: 50%;
+  height: 80vh;
   background-color: black;
+  left: 50%;
+  overflow: scroll;
+}
+.text_box {
+  text-align: center;
+  margin: auto;
+  width: 75%;
+  height: 100%;
 }
 
-.title {
-  color: rgb(155, 177, 236);
-}
 
 .picture {
+  
   width: 50%;
-  height: 85vh;
+  height: 100%;
   background-image: url("/maxfuji.png");
   background-size: cover;
-  background-position: center;
+  background-position: top;
 }
 
 p{
   color: rgb(163, 205, 241);
+  font-size: 20px;
 }
+
+
+.eng,
+.en_title {
+  color: white;
+  font-family: 'Lobster', cursive;
+}
+
+.jpn,
+.jp_title {
+  color: white;
+  font-family: 'Yusei Magic', sans-serif;
+}
+
+.eng,
+.jpn {
+  text-align: left;
+}
+

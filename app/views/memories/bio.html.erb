@@ -1,18 +1,47 @@
-<div class="parent">
+
+ <div class="parent">
 
     <div class="story"> 
-    <button id="switch-lang">Switch Language</button>
-        
-    <h2 class="title"><span lang="en">A story of Max</span> <span lang="jp">マックスの生い立ち</span></h2>
-        
-    <p lang="jp">日本語</p>
-        
-    <p lang="en">English</p>
+      <div class="text_box">
+        <button class="bttn" id="switch-lang"> English ⇄ にほんご </button>
+            
+        <h2><span class="en_title" lang="en">A story of Max</span> <span class="jp_title" lang="jp">マックスの生い立ち</span></h2>
+            
+        <p class="eng" lang="en">
+          Max was born and raised in Japan. He moved to Dubai when he was 6years. 
+          He spent a fabulous life in Dubai for two years. 
+          Walked around the famous world tallest building Burn Khalifa. 
+          Watched the biggest fountain show by the Dubai mall. After those amazing two years, 
+          he decided to go back to Japan. Since he came back, he's been exploring places he'd never been to.
+          He made beautiful memories over the last 7years.<br>
+          Alright, Let's explore his memories!</p>
+
+        <p class="jpn" lang="jp">
+          マックスは大阪で育ち、６歳の時にドバイへ移住。
+          2年間灼熱のドバイで生活を送る。ブルジュハリファの花火をみながらの年越しや、
+          世界最大級の噴水ショーを見ながらの散歩。贅沢な犬生を過ごした後、日本帰国を決断。<br>
+          緑豊かな自然に囲まれた日本での生活を送るマックス。
+          地元の散歩では満足ができなくなりマックスは日本国内を散策することに。各地を旅し、想い出作りに励んだ。<br>
+          さぁ、マックスが見た風景を見にいこう！</p>
+          
+          <button class="bttn" lang="en" onclick="location.href='/memories/gallery'">Gallery</button>
+          <button class="bttn" lang="jp" onclick="location.href='/memories/gallery'">ギャラリー</button>
+          <button class="bttn" lang="en" onclick="location.href='/memories'">Home</button>
+          <button class="bttn" lang="jp" onclick="location.href='/memories'">トップページ</button>
+
+          <script>
+            $('[lang="jp"]').hide();
+            $('#switch-lang').click(function() {
+            $('[lang="jp"]').toggle();
+            $('[lang="en"]').toggle();
+            });
+          </script>
+        </div>
+
     </div>
 
-    <div class="picture" title="max at fuji">
 
-    </div>
+    <div class="picture" title="max at fuji"> </div> <%#右側の写真エリア%>
 
-</div>
+ </div>
 

@@ -1,0 +1,10 @@
+
+.sample {
+  animation-name: gradual;
+  animation-duration: 30s;
+  animation-iteration-count: infinite;
+}
+
+.main {
+  height: 80vh;
+}

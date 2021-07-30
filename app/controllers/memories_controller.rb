@@ -3,4 +3,7 @@ class MemoriesController < ApplicationController
   end
   def bio
   end
+
+  def gallery
+  end
 end
