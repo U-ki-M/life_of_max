@@ -62,7 +62,7 @@ html {
   justify-content: center;
   width: 50%;
   height: 80vh;
-  background-color: black;
+  background-color: rgba(0, 0, 0, 0.616);
   left: 50%;
   overflow: scroll;
 }
@@ -80,6 +80,7 @@ html {
   background-image: url("/maxfuji.png");
   background-size: cover;
   background-position: top;
+  opacity: 62%;
 }
 
 p{
