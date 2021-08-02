@@ -1,10 +1,47 @@
-<section>
 <div class="gal-main">
-  
-  
+  <ul class="category-btn">
+    <li class="list active" data-filter="All">All</li>
+    <li class="list" data-filter="japan">Japan</li>
+    <li class="list" data-filter="dubai">Dubai</li>
+    <li class="list" data-filter="logo">Logo</li>
+  </ul>
 
-
-
+  <div class="pics">
+    <div class="category japan"><a href="/assets/japan5.jpg" data-lightbox="group3"><img src="/assets/japan5.jpg"></a></div>
+    <div class="category logo"><a href="/assets/logo1.png" data-lightbox="group1"><img src="/assets/logo1.png"></a></div>
+    <div class="category dubai"><a href="/assets/dubai1.jpg" data-lightbox="group2"><img src="/assets/dubai1.jpg"></a></div>
+    <div class="category japan"><a href="/assets/japan1.jpg" data-lightbox="group3"><img src="/assets/japan1.jpg"></a></div>
+    <div class="category dubai"><a href="/assets/dubai2.jpg" data-lightbox="group2"><img src="/assets/dubai2.jpg"></a></div>
+    <div class="category japan"><a href="/assets/japan2.jpeg" data-lightbox="group3"><img src="/assets/japan2.jpg"></a></div>
+    <div class="category logo"><a href="/assets/logo2.png" data-lightbox="group1"><img src="/assets/logo2.png"></a></div>
+    <div class="category japan"><a href="/assets/japan3.jpeg" data-lightbox="group3"><img src="/assets/japan3.jpeg"></a></div>
+    <div class="category dubai"><a href="/assets/dubai3.jpeg" data-lightbox="group2"><img src="/assets/dubai3.jpeg"></a></div>
+    <div class="category dubai"><a href="/assets/dubai4.jpeg" data-lightbox="group2"><img src="/assets/dubai4.jpeg"></a></div>
+    <div class="category japan"><a href="/assets/japan4.jpg" data-lightbox="group3"><img src="/assets/japan4.jpg"></a></div>
+    <div class="category dubai"><a href="/assets/dubai5.jpeg" data-lightbox="group2"><img src="/assets/dubai5.jpeg"></a></div>
+    <div class="category japan"><a href="/assets/japan6.jpeg" data-lightbox="group3"><img src="/assets/japan6.jpg"></a></div>
+    <div class="category logo"><a href="/assets/logo3.png" data-lightbox="group1"><img src="/assets/logo3.png"></a></div>
+    <div class="category dubai"><a href="/assets/dubai6.jpg" data-lightbox="group2"><img src="/assets/dubai6.jpeg"></a></div>
+    <div class="category japan"><a href="/assets/japan7.jpg" data-lightbox="group3"><img src="/assets/japan7.jpg"></a></div>
+    <div class="category dubai"><a href="/assets/dubai7.jpg" data-lightbox="group2"><img src="/assets/dubai7.jpg"></a></div>
+ </div>
 
 </div>
-</section>
+
+<script type="text/javascript">
+  $(document).ready(function(){
+    $('.list').click(function(){
+      const value = $(this).attr('data-filter');
+      if (value == 'All'){
+        $('.category').show('1000');
+      }
+      else{
+        $('.category').not('.'+value).hide('1000');
+        $('.category').filter('.'+value).show('1000');
+      }
+    })
+    $('.list').click(function(){
+      $(this).addClass('active').siblings().removeClass('active');
+    })
+  })
+</script>

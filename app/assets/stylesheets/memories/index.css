@@ -45,10 +45,16 @@ header {
   width: 100%;
 }
 .home-icon {
-  margin-left: 20px;
+  margin-left: 30px;
   font-size: x-large;
   color: gray;
 }
+
+.home-icon:hover {
+  text-shadow: 0px 5px 4px rgb(114, 230, 201);
+  transition: .4s;
+}
+
 
 .head_title {
   position: relative;
@@ -66,20 +72,17 @@ header {
   animation-iteration-count: infinite;
 }
 
-section
-{
+section {
 	background-color: transparent;
 	width: 100%;
 	height: 80vh;
 	display: flex;
 }
 
-.menu-left
-{
+.menu-left {
   margin: 20px;
 	width: 25%;
   background-color:transparent;
-	overflow: hidden;
 	border-top-left-radius: 40px;
   border-top-right-radius: 40px;
   border-bottom-right-radius: 40px;
@@ -104,12 +107,11 @@ section
 }
 
 .menu_link {
-	padding: 0 5px;
+	padding: 5px 5px 0 5px;
 	text-shadow: 0 3px 3px rgb(202, 199, 226);
 	color: rgba(255, 255, 255, 0.699);
   text-decoration: none;
 	display: inline-block;
-	overflow: scroll;
 }
 
 .menu_link:hover {
@@ -124,11 +126,31 @@ section
 }
 
 
-footer {
+.footer-div {
   width: 100%;
   height: 10vh;
   background-color:rgba(255, 255, 255, 0.6);
-  border-top: solid 1px black; 
+  border-top: solid 1px black;
+  display: flex;
+  align-items: center;
+}
+
+.footer1 {
+  width: 20%;
+}
+.footer2 {
+  width: 80%;
+  text-align: right;
+  padding-right: 40px;
+}
+.copyright {
+  color: gray;
+}
+
+.ig-icon {
+  margin-left: 30px;
+  color:rgba(230, 134, 217, 0.692);
+  font-size: xx-large;
 }
 
 .paw {

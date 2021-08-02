@@ -6,7 +6,6 @@
 	padding: 0;
 }
 
-
 html {
   font-size: 55%;
 }
@@ -60,6 +59,7 @@ html {
   display: flex;
 }
 .story {
+  padding-top: 40px;
   justify-content: center;
   width: 50%;
   height: 80vh;
