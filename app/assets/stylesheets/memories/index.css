@@ -44,7 +44,9 @@ header {
 .header-div {
   width: 100%;
 }
-.home-icon {
+.home-icon,
+.user-icon,
+.login-icon {
   margin-left: 30px;
   font-size: x-large;
   color: gray;
@@ -55,10 +57,20 @@ header {
   transition: .4s;
 }
 
+.user-icon:hover {
+  text-shadow: 0px 5px 4px rgb(114, 230, 201);
+  transition: .4s;
+}
+
+.login-icon:hover {
+  text-shadow: 0px 5px 4px rgb(114, 230, 201);
+  transition: .4s;
+}
+
 
 .head_title {
   position: relative;
-  left: 35%;
+  left: 26%;
 	text-shadow:
     1px 0 0 black,
     0 1px 0 black,

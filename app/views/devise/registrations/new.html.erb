@@ -1,0 +1,48 @@
+<div class="form-wrap">
+  
+<%= render "devise/shared/error_messages", resource: resource %>
+ <%= form_for(resource, as: resource_name, url: registration_path(resource_name), html: { class: "registration-main" }) do |f| %>
+
+  <div class="form-header"><p>Sign up to join "Chat about Max"<br>新規登録をしてChat about Maxに参加</p>
+
+  </div>
+  <div class="field">
+    <%= f.label :display_name %><br />
+    <%= f.text_field :display_name, autofocus: true, autocomplete: "off" %>
+  </div>
+
+  <div class="field">
+    <%= f.label :first_name %><br />
+    <%= f.text_field :first_name, autocomplete: "off" %>
+  </div>
+
+  <div class="field">
+    <%= f.label :surname %><br />
+    <%= f.text_field :surname, autocomplete: "off" %>
+  </div>
+
+  <div class="field">
+    <%= f.label :email %><br />
+    <%= f.email_field :email, autocomplete: "off" %>
+  </div>
+
+  <div class="field">
+    <%= f.label :password %>
+    <% if @minimum_password_length %>
+    <em>(<%= @minimum_password_length %> characters minimum)</em>
+    <% end %><br />
+    <%= f.password_field :password, autocomplete: "off" %>
+  </div>
+
+  <div class="field">
+    <%= f.label :password_confirmation %><br />
+    <%= f.password_field :password_confirmation, autocomplete: "off" %>
+  </div>
+
+  <div class="actions">
+    <%= f.submit "Sign up", {class:"submit-bttn"}%>
+  </div>
+<% end %>
+
+<%= render "devise/shared/links" %>
+</div>
