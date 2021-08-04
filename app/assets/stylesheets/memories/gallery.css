@@ -5,7 +5,24 @@
   box-sizing: border-box;
 }
 
+html {
+  font-size: 65%;
+}
+@media screen and (min-width: 768px) {
+  html {
+    font-size: 80%;
+  }
+}
+@media screen and (min-width: 1024px) {
+  html {
+    font-size: 100%;
+  }
+}
 
+
+body {
+  background-color: rgb(224, 224, 224);
+}
 .gal-main {
   width: 1280px;
   height: 70vh;

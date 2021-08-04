@@ -36,6 +36,7 @@
   <a class="user-icon" href="/users/sign_up"><span class="header-text">Sign up/新規登録 </span><i class="fas fa-user"></i></a>
   <a class="login-icon" href="/users/sign_in"><span class="header-text">Sign in/ログイン </span><i class="fas fa-sign-in-alt"></i></a>
   <% else %>
+  <span class="display-name">Welcome <%= @user.display_name %> </span>
   <a class="logout-icon" href="/users/sign_out"><span class="header-text">Sign out/ログアウト </span><i class="fas fa-sign-out-alt"></i></a>
   <% end %>
   </div>
