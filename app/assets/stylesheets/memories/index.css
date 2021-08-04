@@ -50,7 +50,7 @@ header {
 .user-icon,
 .login-icon,
 .logout-icon {
-  margin-left: 30px;
+  margin: 0 15px 0 30px;
   font-size: x-large;
   color: gray;
   text-decoration: none;
@@ -102,6 +102,10 @@ header {
   animation-iteration-count: infinite;
 }
 
+.display-name {
+  font-size: 17px;
+  color:rgb(65, 63, 63);
+}
 section {
 	background-color: transparent;
 	width: 100%;
