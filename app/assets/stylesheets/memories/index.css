@@ -50,7 +50,7 @@ header {
 .user-icon,
 .login-icon,
 .logout-icon {
-  margin: 0 15px 0 30px;
+  margin: 0 5px 0 25px;
   font-size: x-large;
   color: gray;
   text-decoration: none;
@@ -103,6 +103,7 @@ header {
 }
 
 .display-name {
+  margin-left: 25px;
   font-size: 17px;
   color:rgb(65, 63, 63);
 }

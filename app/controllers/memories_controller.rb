@@ -1,6 +1,7 @@
 class MemoriesController < ApplicationController
+  before_action :set_item, only: [:index, :bio, :gallery] 
+
   def index
-    @user = current_user
   end
 
   def bio
@@ -9,6 +10,7 @@ class MemoriesController < ApplicationController
   def gallery
   end
 
-  private
-
+  def set_item
+    @user = current_user
+  end
 end
