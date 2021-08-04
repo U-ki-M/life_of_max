@@ -1,8 +1,11 @@
-<h2>Sign up</h2>
+<div class="form-wrap">
+  
+<%= render "devise/shared/error_messages", resource: resource %>
+ <%= form_for(resource, as: resource_name, url: registration_path(resource_name), html: { class: "registration-main" }) do |f| %>
 
-<%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
-  <%= render "devise/shared/error_messages", resource: resource %>
+  <div class="form-header"><p>Sign up to join "Chat about Max"<br>新規登録をしてChat about Maxに参加</p>
 
+  </div>
   <div class="field">
     <%= f.label :display_name %><br />
     <%= f.text_field :display_name, autofocus: true, autocomplete: "off" %>
@@ -37,8 +40,9 @@
   </div>
 
   <div class="actions">
-    <%= f.submit "Sign up" %>
+    <%= f.submit "Sign up", {class:"submit-bttn"}%>
   </div>
 <% end %>
 
 <%= render "devise/shared/links" %>
+</div>
