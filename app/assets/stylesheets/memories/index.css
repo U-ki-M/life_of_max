@@ -50,29 +50,41 @@ header {
 .user-icon,
 .login-icon,
 .logout-icon {
-  margin: 0 5px 0 25px;
+  margin: 0 5px 0 20px;
+  font-size: x-large;
+  color: gray;
+  text-decoration: none;
+}
+
+.display-name {
+  margin: 0 5px 0 0;
   font-size: x-large;
   color: gray;
   text-decoration: none;
 }
 
 .home-icon:hover {
-  text-shadow: 0px 5px 4px rgb(114, 230, 201);
+  text-shadow: 0px 4px 3px rgb(114, 230, 201);
   transition: .4s;
 }
 
 .user-icon:hover {
-  text-shadow: 0px 5px 4px rgb(114, 230, 201);
+  text-shadow: 0px 4px 3px rgb(114, 230, 201);
   transition: .4s;
 }
 
 .login-icon:hover {
-  text-shadow: 0px 5px 4px rgb(114, 230, 201);
+  text-shadow: 0px 4px 3px rgb(114, 230, 201);
   transition: .4s;
 }
 
 .logout-icon:hover {
-  text-shadow: 0px 5px 4px rgb(114, 230, 201);
+  text-shadow: 0px 4px 3px rgb(114, 230, 201);
+  transition: .4s;
+}
+
+.display-name:hover {
+  text-shadow: 0px 4px 3px rgb(114, 230, 201);
   transition: .4s;
 }
 
@@ -102,11 +114,12 @@ header {
   animation-iteration-count: infinite;
 }
 
-.display-name {
-  margin-left: 25px;
+.welcome {
+  margin-left: 30px;
   font-size: 17px;
-  color:rgb(65, 63, 63);
+  color:rgb(80, 79, 79);
 }
+
 section {
 	background-color: transparent;
 	width: 100%;

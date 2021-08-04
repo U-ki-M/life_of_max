@@ -23,35 +23,35 @@
   </head>
 
   <body>
-  <video playsinline autoplay muted loop>
-  <source src="assets/max-biwa.mp4" type="video/mp4">
-  </video>
+    <video playsinline autoplay muted loop>
+    <source src="assets/max-biwa.mp4" type="video/mp4">
+    </video>
 
 
-  <header>
-  <div class="header-div">
-  <div class="header-left">
-  <a class="home-icon" href="/" title="Home/ホーム"> <i class="fas fa-home"></i></a>
-  <% unless user_signed_in? %>
-  <a class="user-icon" href="/users/sign_up"><span class="header-text">Sign up/新規登録 </span><i class="fas fa-user"></i></a>
-  <a class="login-icon" href="/users/sign_in"><span class="header-text">Sign in/ログイン </span><i class="fas fa-sign-in-alt"></i></a>
-  <% else %>
-  <span class="display-name">Welcome <%= @user.display_name %> </span>
-  <a class="logout-icon" href="/users/sign_out"><span class="header-text">Sign out/ログアウト </span><i class="fas fa-sign-out-alt"></i></a>
-  <% end %>
-  </div>
-  <div class=header-right>
-  <a class="head_title" href="/">Life of Max <i class="fas fa-paw"></i></a>
-  </div>
+    <header>
+    <div class="header-div">
+    <div class="header-left">
+    <a class="home-icon" href="/" title="Home/ホーム"> <i class="fas fa-home"></i></a>
+    <% unless user_signed_in? %>
+    <a class="user-icon" href="/users/sign_up"><span class="header-text">Sign up/新規登録 </span><i class="fas fa-user"></i></a>
+    <a class="login-icon" href="/users/sign_in"><span class="header-text">Sign in/ログイン </span><i class="fas fa-sign-in-alt"></i></a>
+    <% else %>
+    <span class="welcome">Welcome <a href="/users/edit" class="display-name"><%= @user.display_name %></a> </span>
+    <a class="logout-icon" href="/users/sign_out"><span class="header-text">Sign out/ログアウト </span><i class="fas fa-sign-out-alt"></i></a>
+    <% end %>
+    </div>
+    <div class=header-right>
+    <a class="head_title" href="/">Life of Max <i class="fas fa-paw"></i></a>
+    </div>
 
-  </header>
-    <%= yield %>
-  <footer>
-  <div class="footer-div">
-  <div class="footer1"><a class="ig-icon" href="#"><i class="fab fa-instagram"></i></a></div>
-  <div class="footer2"><p class="copyright"> &copy;2021 Life of Max</p></div>
-  </div>
-  </footer>
-    </body>
+    </header>
+      <%= yield %>
+    <footer>
+    <div class="footer-div">
+    <div class="footer1"><a class="ig-icon" href="#"><i class="fab fa-instagram"></i></a></div>
+    <div class="footer2"><p class="copyright"> &copy;2021 Life of Max</p></div>
+    </div>
+    </footer>
+  </body>
   
 </html>
