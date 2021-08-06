@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Otomanopee+One&family=Dancing+Script&family=Lobster&family=Yusei+Magic&display=swap');
+
+*
+{
+	margin: 0;
+	padding: 0;
+}
+
+html {
+  font-size: 55%;
+}
+@media screen and (min-width: 768px) {
+  html {
+    font-size: 75%;
+    background-image: 60%;
+  }
+}
+@media screen and (min-width: 1024px) {
+  html {
+    font-size: 100%;
+  }
+}
+
+.chat-main {
+  width: 100%;
+  height: 80vh;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+}
+
+.chat-room {
+  width: 80%;
+  height: 100%;
+  background-color: rgb(255, 255, 255);
+  overflow: scroll;
+}
+
+.chat-title {
+  font-size: 40px;
+  font-family: 'Dancing Script', sans-serif;
+}
+
+.content-form {
+  margin: 10px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.form-message {
+  width: 250px;
+  height: 27px;
+}
+
+.form-submit{
+  display       : inline-block;
+  font-size     : 12px;
+  text-align    : center;
+  cursor        : pointer;
+  padding       : 5px 20px;
+  background    : rgba(0, 0, 0, 0.76);
+  color         : #ffffff;
+  line-height   : 1em;
+  opacity       : 1;
+  transition    : .3s;
+  box-shadow    : 0px 2px 2px #666666;
+}
+
+.submit-bttn:hover {
+  box-shadow    : none;
+  opacity       : 0.8;
+}
+
+.name-date-content {
+  margin: 10px 0;
+  border-bottom: dotted rgb(161, 161, 235) 2px;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+}
+
+.message-date {
+  width: 15%;
+  font-size: small;
+}
+.message-user {
+  width: 15%;
+  font-weight: bold;
+}
+
+.message-content {
+  width: 50%;
+
+}
