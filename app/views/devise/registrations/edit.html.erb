@@ -55,7 +55,7 @@
 
 <p class="cancel-text">Cancel my account / 退会 </p>
 
-<%= button_to "Cancel my account", registration_path(resource_name), data: { confirm: "Are you sure?" }, method: :delete, class: "submit-bttn" %>
+<%= button_to "Delete my account", registration_path(resource_name), data: { confirm: "Delete your account? アカウントを削除しますか？" }, method: :delete, class: "submit-bttn" %>
 
 <%= link_to "Back", :back, {class:"submit-bttn"} %>
 </div>

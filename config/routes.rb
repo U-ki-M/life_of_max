@@ -12,4 +12,6 @@ Rails.application.routes.draw do
      get 'gallery'
     end
   end
+
+  resources :chats, only: [:index, :new, :create, :destroy]
 end
