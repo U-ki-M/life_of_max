@@ -100,6 +100,8 @@ html {
 .message-user,
 .h-user {
   width: 20%;
+  border-right: dotted 1px rgb(117, 117, 117);
+  border-left: dotted 1px rgb(117, 117, 117);
 }
 
 .message-content,
@@ -107,7 +109,8 @@ html {
   width: 60%;
 }
 
-.message-delete {
+.message-delete,
+.h-delete {
   width: 5%;
 }
 
