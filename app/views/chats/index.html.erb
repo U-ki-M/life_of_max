@@ -37,6 +37,13 @@
             <div class="message-content">
               <%= chat.content %>
             </div>
+            <div class="message-delete">
+            <% if user_signed_in? && current_user.id == chat.user_id %>
+              <%= link_to chat_path(chat), data: { confirm: "Delete this message? 削除してよろしいですか？" }, method: :delete, class: :trash_icon do %>
+               <i class="fas fa-trash-alt"></i>
+              <% end %>
+            <% end %>
+            </div>
          </div>
       <% end %>
   </div>

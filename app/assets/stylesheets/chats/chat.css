@@ -104,5 +104,20 @@ html {
 
 .message-content,
 .h-content {
-  width: 65%;
+  width: 60%;
+}
+
+.message-delete {
+  width: 5%;
+}
+
+.trash_icon {
+  font-size: large;
+  color: lightgray;
+}
+
+.trash_icon:hover {
+  color: black;
+  text-shadow: 0 3px 0 gold;
+  transition: .8s;
 }

@@ -1,5 +1,5 @@
 class ChatsController < ApplicationController
-  before_action :authenticate_user!, only: [:index, :new, :create]
+  before_action :authenticate_user!, only: [:index, :new, :create, :destroy]
 
   def index
     @chat = Chat.new
@@ -17,6 +17,12 @@ class ChatsController < ApplicationController
     else
       render chats_index_path
     end
+  end
+
+  def destroy
+    chat = Chat.find(params[:id])
+    chat.destroy
+    redirect_to chats_index_path
   end
 end
 
