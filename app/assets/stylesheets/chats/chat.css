@@ -28,9 +28,12 @@ html {
   align-items: center;
   text-align: center;
   justify-content: center;
+  font-family: 'Otomanopee One', sans-serif;
 }
 
 .chat-room {
+  border-left: solid slategray;
+  border-right: solid slategray;
   width: 80%;
   height: 100%;
   background-color: rgb(255, 255, 255);
@@ -72,24 +75,34 @@ html {
   opacity       : 0.8;
 }
 
+.heading {
+  margin: 15px 0 0 0;
+  border-top: dotted rgb(40, 40, 104) 2px;
+  border-bottom: dotted rgb(40, 40, 104) 2px;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  font-weight: bold;
+  background-color: rgb(238, 235, 235);
+}
 .name-date-content {
-  margin: 10px 0;
+  padding: 10px 0;
   border-bottom: dotted rgb(161, 161, 235) 2px;
   display: flex;
   text-align: center;
   justify-content: center;
 }
 
-.message-date {
-  width: 15%;
-  font-size: small;
+.message-date,
+.h-date {
+  width: 20%;
 }
-.message-user {
-  width: 15%;
-  font-weight: bold;
+.message-user,
+.h-user {
+  width: 20%;
 }
 
-.message-content {
-  width: 50%;
-
+.message-content,
+.h-content {
+  width: 65%;
 }

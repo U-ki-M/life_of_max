@@ -14,10 +14,22 @@
         </div>
       <% end %>
 
+      <div class="heading">
+            <div class="h-date">
+              Date/日付
+            </div>
+            <div class="h-user">
+              User/ユーザー
+           </div>
+            <div class="h-content">
+              Message/メッセージ
+            </div>
+         </div>
+
       <% @chats.each do |chat| %>
         <div class="name-date-content">
             <div class="message-date">
-              <%= chat.created_at %>
+              <%= chat.created_at.strftime('%Y/%m/%d') %>
             </div>
             <div class="message-user">
             <%= chat.user.display_name %>
