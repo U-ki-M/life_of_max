@@ -1,11 +1,14 @@
 <div class="chat-main">
 
   <div class="chat-room">
+      <% if flash[:alert] %>
+          <div class="flash-alert"><%= flash[:alert] %></div>
+        <% end %>
 
       <div class="chat-title"> Manage my comments / <span class="title-jp">投稿の管理</span> </div>
+
       <%= link_to "Go back to chat room / チャットに戻る", chats_path, class: :back_btn %>
       
-
       <div class="heading">
             <div class="h-date">
               Date/日付

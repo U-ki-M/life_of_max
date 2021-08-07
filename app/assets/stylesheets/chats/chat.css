@@ -159,5 +159,11 @@ html {
 
 .flash {
   text-align: center;
-  background-color: rgba(132, 255, 255, 0.795);
+  background-color: rgb(236, 255, 70);
+}
+
+.flash-alert {
+  text-align: center;
+  color: rgb(244, 250, 255);
+  background-color: rgb(255, 67, 67);
 }

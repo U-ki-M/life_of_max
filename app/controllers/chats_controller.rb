@@ -22,7 +22,7 @@ class ChatsController < ApplicationController
   def destroy
     chat = Chat.find(params[:id])
     chat.destroy
-    redirect_to request.referrer, notice: 'Deleted successfully / 投稿が削除されました'
+    redirect_to request.referrer, alert: 'Deleted successfully / 投稿が削除されました'
   end
 
 
