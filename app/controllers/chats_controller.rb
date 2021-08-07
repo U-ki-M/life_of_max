@@ -22,8 +22,9 @@ class ChatsController < ApplicationController
   def destroy
     chat = Chat.find(params[:id])
     chat.destroy
-    redirect_to chats_index_path
+    redirect_to request.referrer
   end
+
 
   def show
     @user = current_user
