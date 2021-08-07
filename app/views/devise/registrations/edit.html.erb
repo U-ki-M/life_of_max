@@ -49,13 +49,13 @@
   </div>
 
   <div class="actions">
-    <%= f.submit "Update", {class:"submit-bttn"} %>
+    <%= f.submit "Update / アップデート", {class:"submit-bttn"} %>
   </div>
 <% end %>
 
-<p class="cancel-text">Cancel my account / 退会 </p>
+<p class="cancel-text">Delete My Account / アカウントの削除 </p>
 
-<%= button_to "Delete my account", registration_path(resource_name), data: { confirm: "Delete your account? アカウントを削除しますか？" }, method: :delete, class: "submit-bttn" %>
+<%= button_to "Delete / 削除", registration_path(resource_name), data: { confirm: "Delete your account? アカウントを削除しますか？" }, method: :delete, class: "submit-bttn" %>
 
 <%= link_to "Back", :back, {class:"submit-bttn"} %>
 </div>
