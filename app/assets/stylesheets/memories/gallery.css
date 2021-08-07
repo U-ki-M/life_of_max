@@ -24,16 +24,17 @@ body {
   background-color: rgb(224, 224, 224);
 }
 .gal-main {
-  width: 1280px;
-  height: 70vh;
-  padding: 20px;
-  margin: 40px auto;
+  padding: 40px;
+  text-align: center;
+  width: 100%;
+  height: 80vh;
   overflow: scroll;
 }
 
 .category-btn {
   display: flex;
   margin-bottom: 10px;
+  margin-left: 30px;
 }
 
 .list {
@@ -54,12 +55,13 @@ body {
 .pics {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
 }
 
 .category {
   position: relative;
-  width: 300px;
-  height: 300px;
+  width: 250px;
+  height: 250px;
   margin: 5px;
 }
 

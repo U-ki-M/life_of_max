@@ -156,3 +156,8 @@ html {
   font-size: xx-large;
   font-family: 'Yusei Magic', sans-serif;
 }
+
+.flash {
+  text-align: center;
+  background-color: rgba(132, 255, 255, 0.795);
+}

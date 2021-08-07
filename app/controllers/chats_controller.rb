@@ -13,7 +13,7 @@ class ChatsController < ApplicationController
     @chat = Chat.new(chat_params)
     @chat.save
     if @chat.save
-      redirect_to chats_index_path
+      redirect_to chats_index_path, notice: 'Posted successfully / 投稿されました'
     else
       render chats_index_path
     end
@@ -22,7 +22,7 @@ class ChatsController < ApplicationController
   def destroy
     chat = Chat.find(params[:id])
     chat.destroy
-    redirect_to request.referrer
+    redirect_to request.referrer, notice: 'Deleted successfully / 投稿が削除されました'
   end
 
 
