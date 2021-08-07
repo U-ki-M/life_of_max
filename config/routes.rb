@@ -13,5 +13,5 @@ Rails.application.routes.draw do
     end
   end
 
-  resources :chats, only: [:index, :new, :create, :destroy]
+  resources :chats, only: [:index, :new, :create, :destroy, :show]
 end

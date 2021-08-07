@@ -1,5 +1,5 @@
 class ChatsController < ApplicationController
-  before_action :authenticate_user!, only: [:index, :new, :create, :destroy]
+  before_action :authenticate_user!, only: [:index, :new, :create, :destroy, :show]
 
   def index
     @chat = Chat.new
@@ -24,10 +24,17 @@ class ChatsController < ApplicationController
     chat.destroy
     redirect_to chats_index_path
   end
-end
 
-private
+  def show
+    @user = current_user
+    @chat = @user.chats.order('created_at DESC')
+  end
 
-def chat_params
-  params.require(:chat).permit(:content).merge(user_id: current_user.id)
+
+  private
+
+  def chat_params
+    params.require(:chat).permit(:content).merge(user_id: current_user.id)
+  end
+
 end
