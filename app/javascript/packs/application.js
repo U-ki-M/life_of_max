@@ -16,9 +16,9 @@ require("channels")
 // const imagePath = (name) => images(name, true)
 
 $(function(){
-  setTimeout("$('.flash').fadeOut('slow')", 3000);
+  setTimeout("$('.flash').fadeOut('slow')", 2500);
 });
 
 $(function(){
-  setTimeout("$('.flash-alert').fadeOut('slow')", 3000);
+  setTimeout("$('.flash-alert').fadeOut('slow')", 2500);
 });

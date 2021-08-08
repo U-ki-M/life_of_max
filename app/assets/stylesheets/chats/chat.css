@@ -104,11 +104,13 @@ html {
 }
 
 .my_comments:hover {
-  text-shadow: 0 3px 3px yellow;
+  text-shadow: 0 3px 3px rgba(255, 255, 0, 0.8);
+  transition: .5s;
 }
 
 .back_btn:hover {
-  text-shadow: 0 3px 3px yellow;
+  text-shadow: 0 3px 3px rgba(255, 255, 0, 0.8);
+  transition: .5s;
 }
 
 .name-date-content {
