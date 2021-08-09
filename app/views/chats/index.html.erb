@@ -17,7 +17,7 @@
         <div class="form-input">
           <%= f.text_field :content, class: 'form-message', placeholder: 'type a message（up to 70 words) 70文字まで' %>
         </div>
-        <div><%= f.submit 'Send', class: 'form-submit' %></div>
+        <div><%= f.submit 'Send', class: 'form-submit', id: 'send-comment' %></div>
         </div>
       <% end %>
 
@@ -37,6 +37,9 @@
             <div class="h-content">
               Message/メッセージ
             </div>
+            <div class="h-like">
+              <i class="far fa-thumbs-up"></i>
+            </div>
             <div class="h-delete">
               X
             </div>
@@ -53,6 +56,34 @@
            </div>
             <div class="message-content">
               <%= chat.content %>
+            </div>
+            <div class="message-like">
+
+            <% if current_user.already_liked?(chat) %>
+              <%= link_to chat_like_path(chat, chat.liked_users), method: :delete, class: :like_on do %>
+                <i class="fas fa-thumbs-up"></i>
+              <% end %>
+               <span class="like-count"><%= chat.liked_users.count %></span>
+            <% else %>
+              <%= link_to chat_likes_path(chat), method: :post, class: :like_off do %>
+              <i class="fas fa-thumbs-up"></i> 
+              <% end %>
+              <span class="like-count"><%= chat.liked_users.count %></span>
+            <% end %>
+             
+            <%#= link_to chat_likes_path(chat), method: :post, class: :like_off do %>
+               <%#<i class="fas fa-thumbs-up"></i>
+            
+            
+            <%# else %>
+
+               
+                <%#= link_to "/chats/#{chat.id}/likes/#{like.id}", method: :delete,  class: :like_on do %>
+                <%#<i class="far fa-thumbs-up"></i>
+                <% end %>
+            
+           
+            
             </div>
             <div class="message-delete">
             <% if user_signed_in? && current_user.id == chat.user_id %>

@@ -134,9 +134,16 @@ html {
 
 .message-content,
 .h-content {
+  width: 60%;
+}
+
+.message-content2,
+.h-content2 {
   width: 65%;
 }
 
+.message-like,
+.h-like,
 .message-delete,
 .h-delete {
   border-left: dotted 1px rgb(117, 117, 117);
@@ -168,4 +175,30 @@ html {
   text-align: center;
   color: rgb(244, 250, 255);
   background-color: rgb(255, 67, 67);
+}
+
+.like_off {
+  color: rgb(177, 177, 180);
+  text-decoration: none;
+}
+
+.like_off:hover {
+  color:lightslategray;
+  text-shadow: 0 4px 4px gray ;
+  transition: .5s;
+}
+
+.like_on {
+  color: rgb(32, 119, 250);
+  text-decoration: none;
+}
+
+.like_on:hover {
+
+  text-shadow: 0 4px 4px gray ;
+  transition: .5s;
+}
+
+.like-count {
+  color: #464444;
 }

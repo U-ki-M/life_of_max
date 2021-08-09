@@ -1,5 +1,5 @@
 class ChatsController < ApplicationController
-  before_action :authenticate_user!, only: [:index, :new, :create, :destroy, :show]
+  before_action :authenticate_user!, only: [:index, :create, :destroy, :show]
 
   def index
     @chat = Chat.new
@@ -37,5 +37,4 @@ class ChatsController < ApplicationController
   def chat_params
     params.require(:chat).permit(:content).merge(user_id: current_user.id)
   end
-
 end

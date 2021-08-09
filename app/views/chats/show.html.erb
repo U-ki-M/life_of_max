@@ -19,10 +19,13 @@
             <div class="h-content">
               Message/メッセージ
             </div>
+            <div class="h-like">
+              <i class="far fa-thumbs-up"></i>
+            </div>
             <div class="h-delete">
               X
             </div>
-         </div>
+       </div>
 
       
       <% @chat.each do |chat| %>
@@ -35,6 +38,11 @@
            </div>
             <div class="message-content">
               <%= chat.content %>
+            </div>
+            <div class="message-like">
+            
+            <span class="like-count"><%= chat.liked_users.count %></span>
+          
             </div>
             <div class="message-delete">
             <% if user_signed_in? && current_user.id == chat.user_id %>
