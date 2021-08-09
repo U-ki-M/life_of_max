@@ -7,6 +7,12 @@ class User < ApplicationRecord
   has_many :chats, dependent: :destroy
   has_many :likes, dependent: :destroy
 
+  has_many :liked_chats, through: :likes, source: :chat
+
+  def already_liked?(chat)
+    self.likes.exists?(chat_id: chat.id)
+  end
+
   validates :display_name, presence: true
   validates :first_name, presence: true
   validates :surname, presence: true

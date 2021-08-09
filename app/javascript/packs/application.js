@@ -32,3 +32,12 @@ $(function(){
  $('video').fadeIn(3000);
 });
 
+$(function(){
+   $('.chat-main').css('display', 'none');  
+  $('.chat-main').fadeIn(800);
+});
+
+$(function(){
+  $('.parent').css('display', 'none');  
+ $('.parent').fadeIn(800);
+});

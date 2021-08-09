@@ -17,7 +17,7 @@
         <div class="form-input">
           <%= f.text_field :content, class: 'form-message', placeholder: 'type a message（up to 70 words) 70文字まで' %>
         </div>
-        <div><%= f.submit 'Send', class: 'form-submit' %></div>
+        <div><%= f.submit 'Send', class: 'form-submit', id: 'send-comment' %></div>
         </div>
       <% end %>
 
@@ -58,9 +58,21 @@
               <%= chat.content %>
             </div>
             <div class="message-like">
+
+            <% if current_user.already_liked?(chat) %>
+              <%= link_to chat_like_path(chat, chat.liked_users), method: :delete, class: :like_on do %>
+                <i class="fas fa-thumbs-up"></i>
+              <% end %>
+               <span class="like-count"><%= chat.liked_users.count %></span>
+            <% else %>
+              <%= link_to chat_likes_path(chat), method: :post, class: :like_off do %>
+              <i class="fas fa-thumbs-up"></i> 
+              <% end %>
+              <span class="like-count"><%= chat.liked_users.count %></span>
+            <% end %>
              
-            <%= link_to chat_likes_path(chat), method: :post, class: :like_off do %>
-               <i class="fas fa-thumbs-up"></i>
+            <%#= link_to chat_likes_path(chat), method: :post, class: :like_off do %>
+               <%#<i class="fas fa-thumbs-up"></i>
             
             
             <%# else %>
@@ -70,7 +82,7 @@
                 <%#<i class="far fa-thumbs-up"></i>
                 <% end %>
             
-            <% end %>
+           
             
             </div>
             <div class="message-delete">

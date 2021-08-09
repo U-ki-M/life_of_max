@@ -177,13 +177,28 @@ html {
   background-color: rgb(255, 67, 67);
 }
 
-.like-off {
-  color: rgb(201, 200, 233);
+.like_off {
+  color: rgb(177, 177, 180);
   text-decoration: none;
 }
 
-.like-on {
-  color: rgb(4, 0, 255);
+.like_off:hover {
+  color:lightslategray;
+  text-shadow: 0 4px 4px gray ;
+  transition: .5s;
+}
+
+.like_on {
+  color: rgb(32, 119, 250);
   text-decoration: none;
 }
 
+.like_on:hover {
+
+  text-shadow: 0 4px 4px gray ;
+  transition: .5s;
+}
+
+.like-count {
+  color: #464444;
+}
