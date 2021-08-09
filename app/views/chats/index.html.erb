@@ -37,6 +37,9 @@
             <div class="h-content">
               Message/メッセージ
             </div>
+            <div class="h-like">
+              <i class="far fa-thumbs-up"></i>
+            </div>
             <div class="h-delete">
               X
             </div>
@@ -53,6 +56,16 @@
            </div>
             <div class="message-content">
               <%= chat.content %>
+            </div>
+            <div class="message-like">
+            <%#
+            unless like presenceしてなかったら
+            link_to create action <span class="like-off"><i class="far fa-thumbs-up"></i></span>
+
+            else
+            link_to destroy action <span class="like-on"><i class="far fa-thumbs-up"></i></span>
+            
+            %>
             </div>
             <div class="message-delete">
             <% if user_signed_in? && current_user.id == chat.user_id %>

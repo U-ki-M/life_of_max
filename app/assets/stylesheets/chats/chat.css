@@ -134,9 +134,11 @@ html {
 
 .message-content,
 .h-content {
-  width: 65%;
+  width: 60%;
 }
 
+.message-like,
+.h-like,
 .message-delete,
 .h-delete {
   border-left: dotted 1px rgb(117, 117, 117);
