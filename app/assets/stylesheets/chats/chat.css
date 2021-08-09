@@ -137,6 +137,11 @@ html {
   width: 60%;
 }
 
+.message-content2,
+.h-content2 {
+  width: 65%;
+}
+
 .message-like,
 .h-like,
 .message-delete,
@@ -171,3 +176,14 @@ html {
   color: rgb(244, 250, 255);
   background-color: rgb(255, 67, 67);
 }
+
+.like-off {
+  color: rgb(201, 200, 233);
+  text-decoration: none;
+}
+
+.like-on {
+  color: rgb(4, 0, 255);
+  text-decoration: none;
+}
+

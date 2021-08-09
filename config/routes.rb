@@ -15,8 +15,7 @@ Rails.application.routes.draw do
     end
   end
 
-  resources :chats, only: [:index, :create, :destroy, :show]
-
-  resources :likes, only: [:create, :destroy]
-
+  resources :chats, only: [:index, :create, :destroy, :show] do
+   resources :likes, only: [:create, :destroy]
+  end
 end

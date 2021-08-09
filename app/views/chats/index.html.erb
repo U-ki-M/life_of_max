@@ -58,14 +58,20 @@
               <%= chat.content %>
             </div>
             <div class="message-like">
-            <%#
-            unless like presenceしてなかったら
-            link_to create action <span class="like-off"><i class="far fa-thumbs-up"></i></span>
-
-            else
-            link_to destroy action <span class="like-on"><i class="far fa-thumbs-up"></i></span>
+             
+            <%= link_to chat_likes_path(chat), method: :post, class: :like_off do %>
+               <i class="fas fa-thumbs-up"></i>
             
-            %>
+            
+            <%# else %>
+
+               
+                <%#= link_to "/chats/#{chat.id}/likes/#{like.id}", method: :delete,  class: :like_on do %>
+                <%#<i class="far fa-thumbs-up"></i>
+                <% end %>
+            
+            <% end %>
+            
             </div>
             <div class="message-delete">
             <% if user_signed_in? && current_user.id == chat.user_id %>

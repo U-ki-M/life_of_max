@@ -37,5 +37,4 @@ class ChatsController < ApplicationController
   def chat_params
     params.require(:chat).permit(:content).merge(user_id: current_user.id)
   end
-
 end

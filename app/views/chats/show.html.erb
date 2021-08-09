@@ -16,16 +16,13 @@
             <div class="h-user">
               User/ユーザー
            </div>
-            <div class="h-content">
+            <div class="h-content2">
               Message/メッセージ
-            </div>
-            <div class="h-like">
-              <i class="far fa-thumbs-up"></i>
             </div>
             <div class="h-delete">
               X
             </div>
-         </div>
+       </div>
 
       
       <% @chat.each do |chat| %>
@@ -36,26 +33,16 @@
             <div class="message-user">
             <%= chat.user.display_name %>
            </div>
-            <div class="message-content">
+            <div class="message-content2">
               <%= chat.content %>
             </div>
-            <div class="message-like">
-            <%#
-            unless like presenceしてなかったら
-            link_to create action <span class="like-off"><i class="far fa-thumbs-up"></i></span>
-
-            else
-            link_to destroy action <span class="like-on"><i class="far fa-thumbs-up"></i></span>
-            
-            %>
-            </div>
-            <div class="message-delete">
-            <% if user_signed_in? && current_user.id == chat.user_id %>
-              <%= link_to chat_path(chat), data: { confirm: "Delete this message? 削除してよろしいですか？" }, method: :delete, class: :trash_icon do %>
-               <i class="fas fa-trash-alt"></i>
-              <% end %>
-            <% end %>
-            </div>
+             <div class="message-delete">
+               <% if user_signed_in? && current_user.id == chat.user_id %>
+                 <%= link_to chat_path(chat), data: { confirm: "Delete this message? 削除してよろしいですか？" }, method: :delete, class: :trash_icon do %>
+                  <i class="fas fa-trash-alt"></i>
+                 <% end %>
+               <% end %>
+             </div>
          </div>
       <% end %>
       
