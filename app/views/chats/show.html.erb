@@ -11,7 +11,7 @@
       
       <div class="heading">
             <div class="h-date">
-              Date/日付
+              Date/日付(Time zone GMT+9)
             </div>
             <div class="h-user">
               User/ユーザー
@@ -28,7 +28,7 @@
       <% @chat.each do |chat| %>
         <div class="name-date-content">
             <div class="message-date">
-              <%= chat.created_at.strftime('%Y/%m/%d') %>
+              <%= chat.created_at.strftime('%Y/%m/%d %H:%M') %>
             </div>
             <div class="message-user">
             <%= chat.user.display_name %>
