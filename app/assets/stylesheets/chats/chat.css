@@ -86,6 +86,15 @@ html {
   opacity       : 0.8;
 }
 
+.heading-who {
+  border-top: dotted rgb(40, 40, 104) 2px;
+  border-bottom: dotted rgb(40, 40, 104) 2px;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  font-weight: bold;
+  background-color: rgb(238, 235, 235);
+}
 .heading {
   margin: 15px 0 0 0;
   border-top: dotted rgb(40, 40, 104) 2px;

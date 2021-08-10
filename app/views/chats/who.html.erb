@@ -1,7 +1,12 @@
 <div class="chat-main">
   <div class="chat-room">
+   <div class="heading-who">
+      Your comment / あなたのコメント
+     </div>
+    <div class="chat-title"> "<%= @chat.content %>" <br>
+    <i class="far fa-thumbs-up"></i> <i class="fas fa-times"></i> <%= @chat.liked_users.count %>
+    </div>
 
-    <div class="chat-title"> "<%= @chat.content %>" </div>
     
 
      <div class="heading">
