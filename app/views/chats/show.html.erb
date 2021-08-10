@@ -40,9 +40,9 @@
               <%= chat.content %>
             </div>
             <div class="message-like">
-            
-            <span class="like-count"><%= chat.liked_users.count %></span>
-          
+            <%= link_to who_chat_path(chat), class: :like_count do%>
+            <span><%= chat.liked_users.count %></span>
+            <% end %>
             </div>
             <div class="message-delete">
             <% if user_signed_in? && current_user.id == chat.user_id %>

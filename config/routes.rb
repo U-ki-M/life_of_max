@@ -17,5 +17,8 @@ Rails.application.routes.draw do
 
   resources :chats, only: [:index, :create, :destroy, :show] do
    resources :likes, only: [:create, :destroy]
+   member do
+    get 'who'
+   end
   end
 end

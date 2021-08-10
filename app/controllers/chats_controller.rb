@@ -31,6 +31,11 @@ class ChatsController < ApplicationController
     @chat = @user.chats.order('created_at DESC')
   end
 
+  def who
+    @user = current_user
+    @chat = Chat.find(params[:id])
+    @like = Like.new
+  end
 
   private
 

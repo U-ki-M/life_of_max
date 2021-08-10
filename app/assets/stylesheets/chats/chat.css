@@ -42,7 +42,7 @@ html {
 
 .chat-title {
   font-size: 40px;
-  font-family: 'Dancing Script', sans-serif;
+  
 }
 
 .content-form {
@@ -199,6 +199,43 @@ html {
   transition: .5s;
 }
 
-.like-count {
+.like_count {
   color: #464444;
+  text-shadow: 0 3px 2px rgb(135, 255, 219);
+  text-decoration: none;
+  font-size: 18px;
+}
+
+.like_count:hover {
+  color: cornflowerblue;
+  text-shadow: none;
+  transition: .5s;
+}
+
+.message-like
+
+/* who.htmlのCSS*/
+
+.heading-who {
+  margin: 15px 0 0 0;
+  font-size: 20px;
+  border-top: dotted rgb(40, 40, 104) 2px;
+  border-bottom: dotted rgb(40, 40, 104) 2px;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  font-weight: bold;
+  background-color: rgb(238, 235, 235);
+}
+
+.who-main {
+  padding: 10px 0;
+  border-bottom: dotted rgb(161, 161, 235) 2px;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+}
+
+.who-liked {
+  font-size: 20px;
 }

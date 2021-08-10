@@ -1,0 +1,23 @@
+<div class="chat-main">
+  <div class="chat-room">
+
+    <div class="chat-title"> "<%= @chat.content %>" </div>
+    
+
+     <div class="heading">
+      Who liked this comment? いいねしてくれたユーザー
+     </div>
+
+    
+     <% @chat.liked_users.each do |user| %>
+       <div class="who-main">
+         <div class="who-liked">
+          <%= user.display_name %>
+         </div>
+      </div>
+      <% end %>
+     
+    
+<%= link_to "Back / 戻る", chat_path(@user.id), class: :back_btn %>
+  </div>
+ </div> 
