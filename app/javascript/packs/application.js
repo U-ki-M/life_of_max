@@ -41,3 +41,9 @@ $(function(){
   $('.parent').css('display', 'none');  
  $('.parent').fadeIn(800);
 });
+
+$(function(){
+  $("#thumb").animate({fontSize: 300}, 700, 'swing');
+  $("#thumb").animate({fontSize: 40}, 300, 'swing');
+  $("#thumb").css('color', 'blue'); 
+});
