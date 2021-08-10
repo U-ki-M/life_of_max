@@ -1,24 +1,80 @@
-# README
+# アプリ名： Life Of Max
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+# アプリ概要：
+## どんなアプリ？
+<li>愛犬マックスの紹介（日本語と英語）</li>
+<li>マックスのギャラリー</li>
+<li>チャットルーム（コメント投稿）</li>
+<li>問い合わせフォーム（未実装）</li>
+<br>
 
-Things you may want to cover:
+## なぜこのアプリ？
 
-* Ruby version
+<li>かわいい愛犬マックスを見てもらいたい
+<li>多国籍の9千人のフォロワーに向け、日本語と英語でマックスの紹介
+<li>IGの運営者が外国人でオーストラリアに住んでいるため、<br>
+&nbsp; &nbsp; &nbsp;撮影依頼を受ける時にやり取りがオーストラリア経由となってしまい不便である。<br>
+&nbsp; &nbsp; &nbsp;問い合わせフォームから直接依頼をしてもらうことで時間を短縮を狙う
+<br>
+<br>
 
-* System dependencies
+## URL
+http://life-of-max.herokuapp.com/
+<br>
+<br>
 
-* Configuration
+## テスト用アカウント
+**Basic認証**<br>
+ユーザー: yuki<br>
+パスワード: 1985<br>
 
-* Database creation
+**ユーザーログイン**<br>
+email: cooper@gmail.com<br>
+パスワード: cooper<br>
+<br>
 
-* Database initialization
+ ## 利用方法
+- プロフィールとギャラリーはユーザー登録不要
+- チャット機能(コメント投稿)を利用するにはサインインが必要
+<br><br>
 
-* How to run the test suite
+## 実装した機能
+- プロフィール
+  - ボタン一つで日本語と英語の切り替え（非同期）
+- ギャラリーページ
+  - カテゴリーごとで写真を分け、表示の切り替えを行う
+  - 写真クリックで拡大しグループごとにスライドが可能
+- ユーザー登録
+  - 新規登録
+  - ログイン
+  - 編集
+  - 削除 (ユーザー削除と共にコメントやいいねも同時に削除)
+  - ログイン・ログアウト、新規登録、削除でフラッシュメッセージ発火
+- チャットルーム（コメント投稿機能）
+  - コメント投稿/削除
+  - コメント表示（最新の15件のみ）
+  - 自身のコメント一覧
+  - 自身のコメントのみに削除ボタン付与
+  - いいねのOn/Off
+  - いいねの合計数表示
+  - 自身のコメントにいいねを押したユーザーの表示
+  - 投稿・削除、いいねOn Offごとにフラッシュメッセージ発火
+- 問い合わせフォーム(未実装))
+  - メールアドレス、名前、内容の３点
+  - メールで問い合わせが送られてくるように設定予定
+ <br>
 
-* Services (job queues, cache servers, search engines, etc.)
+## 機能紹介 &nbsp; (画像/Gif)
+**トップページ**<br>
 
-* Deployment instructions
+**ユーザー機能**<br>
 
-* ...
+**プロフィール**<br>
+
+**ギャラリー**<br>
+
+**チャット（コメント投稿）**<br>
+
+<!-- **問い合わせフォーム**<br> -->
+
+***
