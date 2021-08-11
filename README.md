@@ -164,6 +164,62 @@ email: cooper@gmail.com<br>
 
 **チャット（いいねをしたユーザー表示）**<br>
 
-<!-- **問い合わせフォーム**<br> -->
+**問い合わせフォーム**
 
 ***
+
+# テーブル設計
+
+## users テーブル
+
+| Column             | Type    | Options                   |
+| ------------------ | ------- | ------------------------- |
+| display_name       | string  | null: false               |
+| sur-name           | string  | null: false               |
+| first_name         | string  | null: false               |
+| email              | string  | null: false, unique: true |
+| encrypted_password | string  | null: false               |
+
+
+
+### Association
+
+has_many :chats, dependent: :destroy<br>
+has_many :likes, dependent: :destroy<br>
+has_many :liked_chats, through: :likes, source: :chat<br>
+
+## chats テーブル
+
+| Column             | Type        | Options                         |
+| ------------------ | ------------| ------------------------------- |
+| content            | string      | null: false                     |
+| user               | references  | null: false, foreign_key: true  |
+| like               | references  | null: false, foreign_key: true  |
+
+
+### Association
+
+  belongs_to :user<br>
+  has_many   :likes, dependent: :destroy<br>
+  has_many :liked_users, through: :likes, source: :user<br>
+
+## likes テーブル
+
+| Column             | Type        | Options                         |
+| ------------------ | ------------| ------------------------------- |
+| user               | references  | null: false, foreign_key: true  |
+| chat               | references  | null: false, foreign_key: true  |
+
+
+### Association
+
+  belongs_to :user<br>
+  belongs_to :chat<br>
+
+***
+## Git Clone
+```
+$ git clone https://github.com/U-ki-M/life_of_max.git
+```
+
+<!-- git cloneしてから、ローカルで動作をさせるまでに必要なコマンドを記述。この時、アプリケーション開発に使用した環境を併記することを忘れないこと（パッケージやRubyのバージョンなど）。 -->
