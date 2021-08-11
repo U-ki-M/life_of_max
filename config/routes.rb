@@ -12,6 +12,7 @@ Rails.application.routes.draw do
     collection do
      get 'bio'
      get 'gallery'
+     get 'contact'
     end
   end
 

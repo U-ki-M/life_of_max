@@ -1,5 +1,5 @@
 class MemoriesController < ApplicationController
-  before_action :set_item, only: [:index, :bio, :gallery] 
+  before_action :set_item, only: [:index, :bio, :gallery, :contact] 
 
   def index
   end
@@ -8,6 +8,9 @@ class MemoriesController < ApplicationController
   end
 
   def gallery
+  end
+
+  def contact
   end
 
   def set_item
