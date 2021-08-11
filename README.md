@@ -67,7 +67,26 @@ email: cooper@gmail.com<br>
     - コンタクトフォームへの遷移ボタン（未実装）
   - 表示
     - 左側にメニュー表示
-    - 全体画面（バックグラウンド）に動画のはめこみ」
+    - 全体画面（バックグラウンド）に動画のはめこみ
+
+- ***ユーザー登録 （新規登録ページ）***
+  - ボタン
+    - ユーザー登録フォーム送信ボタン
+  - 表示
+    - ユーザー登録用フォーム
+
+- ***ユーザー登録 （ログインページ）***
+  - ボタン
+    - ログイン送信ボタン
+  - 表示
+    - ログイン用フォーム
+
+- ***ユーザー登録 （編集ページ）***
+  - ボタン
+    - アップデートボタン
+    - アカウント削除ボタン
+  - 表示
+    - アップデート用フォーム
   
 - ***プロフィール***
   - ボタン
@@ -76,6 +95,7 @@ email: cooper@gmail.com<br>
     - ホームへの遷移ボタン
   - 表示
     - プロフィール文を表示（日本語、英語、非同期での切り替え
+
 - ***ギャラリーページ***
   - ボタン
     - カテゴリー別のボタン（カテゴリーのテーマの写真のみの表示に切り替え）
@@ -99,6 +119,7 @@ email: cooper@gmail.com<br>
     - いいねボタンといいね合計件数
     - ゴミ箱マーク（投稿者本人のみに付与）
     - 投稿・削除、いいねOn Offごとにフラッシュメッセージ発火
+
 - ***チャットルーム &nbsp; (投稿管理ページ)***
   - ボタン
       - いいね件数をクリックすると、そのコメントにいいねを押したしたユーザーの一覧ページへ遷移
@@ -112,6 +133,7 @@ email: cooper@gmail.com<br>
       - いいねの合計件数
       - ゴミ箱マーク
       - 投稿・削除、いいねOn Offごとにフラッシュメッセージ発火
+
   - ***チャットルーム &nbsp; (いいねページ)***
    - ボタン
       - 投稿管理ページへ遷移するボタン
@@ -120,10 +142,10 @@ email: cooper@gmail.com<br>
       - 合計いいね数
       - このコメントにいいねを付けたユーザー名の一覧
 
-- ***問い合わせフォーム(未実装)***
-  - メールアドレス、名前、タイトル、内容、タイトル以外の３点の情報入力必須
-  - メールで問い合わせが送られてくるように設定をする予定
- <br>
+- ***問い合わせフォーム***
+  - 名前、メールアドレス、タイトル、内容、タイトル以外の３点の情報入力必須
+  - Google formを利用
+<br>
 
 ## 機能紹介 &nbsp; (画像/Gif)
 **トップページ**<br>
@@ -142,6 +164,62 @@ email: cooper@gmail.com<br>
 
 **チャット（いいねをしたユーザー表示）**<br>
 
-<!-- **問い合わせフォーム**<br> -->
+**問い合わせフォーム**
 
 ***
+
+# テーブル設計
+
+## users テーブル
+
+| Column             | Type    | Options                   |
+| ------------------ | ------- | ------------------------- |
+| display_name       | string  | null: false               |
+| sur-name           | string  | null: false               |
+| first_name         | string  | null: false               |
+| email              | string  | null: false, unique: true |
+| encrypted_password | string  | null: false               |
+
+
+
+### Association
+
+has_many :chats, dependent: :destroy<br>
+has_many :likes, dependent: :destroy<br>
+has_many :liked_chats, through: :likes, source: :chat<br>
+
+## chats テーブル
+
+| Column             | Type        | Options                         |
+| ------------------ | ------------| ------------------------------- |
+| content            | string      | null: false                     |
+| user               | references  | null: false, foreign_key: true  |
+| like               | references  | null: false, foreign_key: true  |
+
+
+### Association
+
+  belongs_to :user<br>
+  has_many   :likes, dependent: :destroy<br>
+  has_many :liked_users, through: :likes, source: :user<br>
+
+## likes テーブル
+
+| Column             | Type        | Options                         |
+| ------------------ | ------------| ------------------------------- |
+| user               | references  | null: false, foreign_key: true  |
+| chat               | references  | null: false, foreign_key: true  |
+
+
+### Association
+
+  belongs_to :user<br>
+  belongs_to :chat<br>
+
+***
+## Git Clone
+```
+$ git clone https://github.com/U-ki-M/life_of_max.git
+```
+
+<!-- git cloneしてから、ローカルで動作をさせるまでに必要なコマンドを記述。この時、アプリケーション開発に使用した環境を併記することを忘れないこと（パッケージやRubyのバージョンなど）。 -->

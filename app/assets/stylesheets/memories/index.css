@@ -234,3 +234,9 @@ header {
 .paw {
   color:rgba(255, 255, 255, 0.521);
 }
+
+/* contack form CSS */
+.chat-main iframe {
+  width: 100%;
+  height: 100%;
+}
