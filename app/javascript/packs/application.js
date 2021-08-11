@@ -43,7 +43,7 @@ $(function(){
 });
 
 $(function(){
-  $("#thumb").animate({fontSize: 300}, 700, 'swing');
+  $("#thumb").animate({fontSize: 100}, 700, 'swing');
   $("#thumb").animate({fontSize: 40}, 300, 'swing');
   $("#thumb").css('color', 'blue'); 
 });
