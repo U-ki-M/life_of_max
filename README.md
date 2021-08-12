@@ -5,7 +5,7 @@
 <li>愛犬マックスの紹介（日本語と英語）</li>
 <li>マックスのギャラリー</li>
 <li>チャットルーム（コメント投稿）</li>
-<li>問い合わせフォーム（未実装）</li>
+<li>問い合わせフォーム（Googleフォーム）</li>
 <br>
 
 ## なぜこのアプリ？
@@ -108,7 +108,7 @@ email: cooper@gmail.com<br>
   - ボタン
     - コメント投稿ボタン
     - ゴミ箱マーククリックで削除
-    - いいねマーク、いいねのOn/Off
+    - いいねマークをクリックで、いいねのOn/Off、いいねカウント数変更 (Ajax 非同期通信)
     - マイコメントページへの遷移ボタン（自身の投稿管理ページ）
   - 表示
     - コメント記入フォーム
@@ -118,7 +118,7 @@ email: cooper@gmail.com<br>
     - 投稿内容
     - いいねボタンといいね合計件数
     - ゴミ箱マーク（投稿者本人のみに付与）
-    - 投稿・削除、いいねOn Offごとにフラッシュメッセージ発火
+    - 投稿・削除をする度にフラッシュメッセージ発火
 
 - ***チャットルーム &nbsp; (投稿管理ページ)***
   - ボタン
@@ -132,7 +132,6 @@ email: cooper@gmail.com<br>
       - 投稿内容
       - いいねの合計件数
       - ゴミ箱マーク
-      - 投稿・削除、いいねOn Offごとにフラッシュメッセージ発火
 
   - ***チャットルーム &nbsp; (いいねページ)***
    - ボタン
@@ -149,10 +148,11 @@ email: cooper@gmail.com<br>
 
 ## 機能紹介 &nbsp; (画像/Gif)
 **トップページ**<br>
-
+![Image from Gyazo](https://i.gyazo.com/995a9fde566c19cede72335da5091e55.gif)
 **ユーザー機能**<br>
-
+![Image from Gyazo](https://i.gyazo.com/95f01ecfb65cc88d19183abe52aa3bcf.gif)]
 **プロフィール**<br>
+[![Image from Gyazo](https://i.gyazo.com/c713aca34f3aa5e5895920468f2c5e4f.gif)](https://gyazo.com/c713aca34f3aa5e5895920468f2c5e4f)
 
 **ギャラリー**<br>
 
@@ -161,6 +161,10 @@ email: cooper@gmail.com<br>
 **チャット（コメント投稿）**<br>
 
 **チャット（投稿管理）**<br>
+
+**チャット（いいねAjax 非同期通信）**<br>
+
+![Image from Gyazo](https://i.gyazo.com/fd0c6346be49d66938455b1bf0ec47b9.gif)
 
 **チャット（いいねをしたユーザー表示）**<br>
 
