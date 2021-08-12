@@ -9,13 +9,11 @@
 <br>
 
 ## なぜこのアプリ？
-
-<li>かわいい愛犬マックスを見てもらいたい
 <li>多国籍の9千人のフォロワーに向け、日本語と英語でマックスの紹介
-<li>かわいい写真をギャラリーで紹介し、更なるフォロワーの獲得
-<li>IGの運営者が外国人でオーストラリアに住んでおり、<br>
-&nbsp; &nbsp; &nbsp;撮影依頼を受ける時にやり取りがオーストラリア経由となってしまい不便であるため<br>
-&nbsp; &nbsp; &nbsp;問い合わせフォームから直接依頼をしてもらうことで時間短縮を狙う
+<li>マックスを中心にコメント投稿機能で世界を繋げる
+<li>かわいい写真をギャラリーで紹介し、20%のフォロワー増加を目指す
+<li>お問い合わせフォームを設けることで商品PR等のオファーを直接受けることを可能にする<br>
+&nbsp; &nbsp; &nbsp;（インスタグラム運営者はオーストラリア在住のため不便が発生）<br>
 <br>
 <br>
 
@@ -154,7 +152,7 @@ email: cooper@gmail.com<br>
 [![Image from Gyazo](https://i.gyazo.com/3790afdc022fac8d9ffe26054a199ccc.gif)](https://gyazo.com/3790afdc022fac8d9ffe26054a199ccc)
 
 **プロフィール**<br>
-[![Image from Gyazo](https://i.gyazo.com/c713aca34f3aa5e5895920468f2c5e4f.gif)](https://gyazo.com/c713aca34f3aa5e5895920468f2c5e4f)
+[![Image from Gyazo](https://i.gyazo.com/3c0566a98c3fa9fc0c06fc10a9bfebef.gif)](https://gyazo.com/3c0566a98c3fa9fc0c06fc10a9bfebef)
 
 **ギャラリー**<br>
 [![Image from Gyazo](https://i.gyazo.com/3d68455b9bc60ca880668d99abc395bd.gif)](https://gyazo.com/3d68455b9bc60ca880668d99abc395bd)
