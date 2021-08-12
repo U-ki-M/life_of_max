@@ -148,10 +148,7 @@ email: cooper@gmail.com<br>
 
 ## 機能紹介 &nbsp; (画像/Gif)
 **トップページ**<br>
-(画像)
-[![Image from Gyazo](https://i.gyazo.com/afd69a0103887e3f01d66439e5e2c271.jpg)](https://gyazo.com/afd69a0103887e3f01d66439e5e2c271)
-(Gif,,,Githubで表示不可)
-[![Image from Gyazo](https://i.gyazo.com/aadea6c7672d9c5d78dd3dac5f9e7efe.gif)](https://gyazo.com/aadea6c7672d9c5d78dd3dac5f9e7efe)
+[![Image from Gyazo](https://i.gyazo.com/814581c41db81aa0d4b89f763a964497.gif)](https://gyazo.com/814581c41db81aa0d4b89f763a964497)
 
 **ユーザー機能**<br>
 [![Image from Gyazo](https://i.gyazo.com/ebe47853cd9fd6f30f447e359db78896.gif)](https://gyazo.com/ebe47853cd9fd6f30f447e359db78896)
@@ -160,11 +157,8 @@ email: cooper@gmail.com<br>
 [![Image from Gyazo](https://i.gyazo.com/c713aca34f3aa5e5895920468f2c5e4f.gif)](https://gyazo.com/c713aca34f3aa5e5895920468f2c5e4f)
 
 **ギャラリー**<br>
-(画像)
-[![Image from Gyazo](https://i.gyazo.com/c9977f92662470473af20dc5a9c75958.jpg)](https://gyazo.com/c9977f92662470473af20dc5a9c75958)
-(Gif,,,Githubで表示不可)
-[![Image from Gyazo](https://i.gyazo.com/9ac22daac0f682552c35873034890a81.gif)](https://gyazo.com/9ac22daac0f682552c35873034890a81)
-[![Image from Gyazo](https://i.gyazo.com/497cae37e91c33761f78b3b5ecbb1f13.gif)](https://gyazo.com/497cae37e91c33761f78b3b5ecbb1f13)
+[![Image from Gyazo](https://i.gyazo.com/3d68455b9bc60ca880668d99abc395bd.gif)](https://gyazo.com/3d68455b9bc60ca880668d99abc395bd)
+[![Image from Gyazo](https://i.gyazo.com/2d841f7719c9d30aec3745ece72630fd.gif)](https://gyazo.com/2d841f7719c9d30aec3745ece72630fd)
 
 **チャット（投稿一覧/コメント投稿/コメント削除）**<br>
 [![Image from Gyazo](https://i.gyazo.com/9484f2ef583b3f63a4264ad46987734f.gif)](https://gyazo.com/9484f2ef583b3f63a4264ad46987734f)
