@@ -57,33 +57,10 @@
             <div class="message-content">
               <%= chat.content %>
             </div>
-            <div class="message-like">
+            <div class="message-like", id="message-like-<%= chat.id %>">
 
-            <% if current_user.already_liked?(chat) %>
-              <%= link_to chat_like_path(chat, chat.liked_users), method: :delete, class: :like_on do %>
-                <i class="fas fa-thumbs-up"></i>
-              <% end %>
-               <span class="like-count"><%= chat.liked_users.count %></span>
-            <% else %>
-              <%= link_to chat_likes_path(chat), method: :post, class: :like_off do %>
-              <i class="fas fa-thumbs-up"></i> 
-              <% end %>
-              <span class="like-count"><%= chat.liked_users.count %></span>
-            <% end %>
-             
-            <%#= link_to chat_likes_path(chat), method: :post, class: :like_off do %>
-               <%#<i class="fas fa-thumbs-up"></i>
-            
-            
-            <%# else %>
+           <%= render partial: 'likes/like', locals: { chat: chat} %>
 
-               
-                <%#= link_to "/chats/#{chat.id}/likes/#{like.id}", method: :delete,  class: :like_on do %>
-                <%#<i class="far fa-thumbs-up"></i>
-                <% end %>
-            
-           
-            
             </div>
             <div class="message-delete">
             <% if user_signed_in? && current_user.id == chat.user_id %>
