@@ -148,10 +148,9 @@ email: cooper@gmail.com<br>
 
 ## 機能紹介 &nbsp; (画像/Gif)
 **トップページ**<br>
-[![Image from Gyazo](https://i.gyazo.com/d73794a5c30b4210e8e9839231bb8e8f.gif)](https://gyazo.com/d73794a5c30b4210e8e9839231bb8e8f)
 
 **ユーザー機能**<br>
-[![Image from Gyazo](https://i.gyazo.com/ebe47853cd9fd6f30f447e359db78896.gif)](https://gyazo.com/ebe47853cd9fd6f30f447e359db78896)
+[![Image from Gyazo](https://i.gyazo.com/fddf2001ec763b893451513f27da2091.gif)](https://gyazo.com/fddf2001ec763b893451513f27da2091)
 
 **プロフィール**<br>
 [![Image from Gyazo](https://i.gyazo.com/c713aca34f3aa5e5895920468f2c5e4f.gif)](https://gyazo.com/c713aca34f3aa5e5895920468f2c5e4f)
