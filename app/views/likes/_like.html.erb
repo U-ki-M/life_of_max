@@ -1,0 +1,11 @@
+<% if current_user.already_liked?(chat) %>
+    <%= link_to chat_like_path(chat, chat.liked_users), method: :delete, class: :like_on, remote: true do %>
+      <i class="fas fa-thumbs-up"></i>
+    <% end %>
+      <span class="like-count"><%= chat.liked_users.count %></span>
+  <% else %>
+    <%= link_to chat_likes_path(chat), method: :post, class: :like_off, remote: true do %>
+    <i class="fas fa-thumbs-up"></i> 
+    <% end %>
+    <span class="like-count"><%= chat.liked_users.count %></span>
+<% end %>
