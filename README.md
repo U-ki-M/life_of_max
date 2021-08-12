@@ -245,5 +245,3 @@ mysql  Ver 14.14
 $ git clone https://github.com/U-ki-M/life_of_max.git
 ```
 
-
-<!-- git cloneしてから、ローカルで動作をさせるまでに必要なコマンドを記述。この時、アプリケーション開発に使用した環境を併記することを忘れないこと（パッケージやRubyのバージョンなど）。 -->
