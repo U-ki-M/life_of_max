@@ -179,6 +179,9 @@ email: cooper@gmail.com<br>
 
 # テーブル設計
 
+## ER図
+[![Image from Gyazo](https://i.gyazo.com/bed72879301400e0590a7e1344e18aa1.png)](https://gyazo.com/bed72879301400e0590a7e1344e18aa1)
+
 ## users テーブル
 
 | Column             | Type    | Options                   |
