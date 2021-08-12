@@ -150,6 +150,9 @@ email: cooper@gmail.com<br>
 **トップページ**<br>
 [![Image from Gyazo](https://i.gyazo.com/cf3d4b91d9161dd2134d4fc98adf7e11.gif)](https://gyazo.com/cf3d4b91d9161dd2134d4fc98adf7e11)
 
+**トップページ**<br>
+[![Image from Gyazo](https://i.gyazo.com/cf3d4b91d9161dd2134d4fc98adf7e11.gif)](https://gyazo.com/cf3d4b91d9161dd2134d4fc98adf7e11)
+
 **ユーザー機能**<br>
 [![Image from Gyazo](https://i.gyazo.com/ebe47853cd9fd6f30f447e359db78896.gif)](https://gyazo.com/ebe47853cd9fd6f30f447e359db78896)
 
@@ -159,10 +162,13 @@ email: cooper@gmail.com<br>
 **ギャラリー**<br>
 [![Image from Gyazo](https://i.gyazo.com/c596e13e84741cb87fb7256a9091fd9a.gif)](https://gyazo.com/c596e13e84741cb87fb7256a9091fd9a)
 
+**ギャラリー**<br>
+[![Image from Gyazo](https://i.gyazo.com/c596e13e84741cb87fb7256a9091fd9a.gif)](https://gyazo.com/c596e13e84741cb87fb7256a9091fd9a)
+
 **チャット（投稿一覧/コメント投稿/コメント削除）**<br>
 [![Image from Gyazo](https://i.gyazo.com/9484f2ef583b3f63a4264ad46987734f.gif)](https://gyazo.com/9484f2ef583b3f63a4264ad46987734f)
 
-**チャット（投稿管理）**<br>
+**チャット（自身の投稿一覧/いいね数/削除）**<br>
 [![Image from Gyazo](https://i.gyazo.com/42117291c0b7bb51706f981347cc1b66.gif)](https://gyazo.com/42117291c0b7bb51706f981347cc1b66)
 
 **チャット（いいねAjax 非同期通信）**<br>
