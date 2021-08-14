@@ -6,8 +6,9 @@
 <div class="form-header"><p>Edit <%= resource_name.to_s.humanize %> / ユーザー情報編集</p>
 </div>
   <div class="field">
-    <%= f.label :image %><br/>
-    <%= f.file_field :image %>
+    <%= f.label :image do %> Profile Photo / 写真を選択<br><span class="avatar"><i class="far fa-user-circle"></i></span>
+     <%= f.file_field :image, style:"display: none;" %>
+    <% end %>
   </div>
 
   <div class="field">

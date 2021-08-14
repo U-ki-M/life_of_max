@@ -17,6 +17,7 @@
      <% @chat.liked_users.each do |user| %>
        <div class="who-main">
          <div class="who-liked">
+         <%= image_tag user.image, class: "avatar-chat" if user.image.attached? %> <!-- このcssはindex.css内-->
           <%= user.display_name %>
          </div>
       </div>

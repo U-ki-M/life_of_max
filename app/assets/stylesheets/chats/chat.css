@@ -134,11 +134,20 @@ html {
 .h-date {
   width: 25%;
 }
-.message-user,
+
 .h-user {
   width: 15%;
   border-right: dotted 1px rgb(117, 117, 117);
   border-left: dotted 1px rgb(117, 117, 117);
+}
+
+.message-user {
+  width: 15%;
+  border-right: dotted 1px rgb(117, 117, 117);
+  border-left: dotted 1px rgb(117, 117, 117);
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .message-content,
@@ -238,13 +247,14 @@ html {
 }
 
 .who-main {
-  padding: 10px 0;
+  padding: 7px 0;
   border-bottom: dotted rgb(161, 161, 235) 2px;
-  display: flex;
-  text-align: center;
-  justify-content: center;
 }
 
 .who-liked {
   font-size: 20px;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
 }
