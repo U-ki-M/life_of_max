@@ -27,15 +27,19 @@
       <div class="header-div">
         <div class="header-left">
           <a class="home-icon" href="/" title="Home/ホーム"> <i class="fas fa-home"></i></a>
-          <% unless user_signed_in? %>
+          <% if user_signed_in? && @user.image.attached? %>
+          <%= image_tag @user.image, class: 'icon_image' if @user.image.attached? %><a href="/users/edit" class="display-name"><%= @user.display_name %></a>
+          <a class="logout-icon" href="/users/sign_out"><span class="header-text">Sign out/ログアウト </span><i class="fas fa-sign-out-alt"></i></a>
+          <% elsif user_signed_in? %>
+          <span class='icon_awsome'><i class="far fa-user-circle"></i></span><a href="/users/edit" class="display-name"><%= @user.display_name %></a>
+          <a class="logout-icon" href="/users/sign_out"><span class="header-text">Sign out/ログアウト </span><i class="fas fa-sign-out-alt"></i></a>
+          <% else %>
           <a class="user-icon" href="/users/sign_up"><span class="header-text">Sign up/新規登録 </span><i class="fas fa-user"></i></a>
           <a class="login-icon" href="/users/sign_in"><span class="header-text">Sign in/ログイン </span><i class="fas fa-sign-in-alt"></i></a>
-          <% else %>
-          <span class="welcome">Welcome <a href="/users/edit" class="display-name"><%= @user.display_name %></a> </span>
-          <a class="logout-icon" href="/users/sign_out"><span class="header-text">Sign out/ログアウト </span><i class="fas fa-sign-out-alt"></i></a>
           <% end %>
+
         </div>
-        <div class=header-right>
+        <div class="header-right">
           <a class="head_title" href="/">Life of Max <i class="fas fa-paw"></i></a>
         </div>
       

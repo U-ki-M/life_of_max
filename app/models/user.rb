@@ -6,8 +6,8 @@ class User < ApplicationRecord
 
   has_many :chats, dependent: :destroy
   has_many :likes, dependent: :destroy
-
   has_many :liked_chats, through: :likes, source: :chat
+  has_one_attached :image
 
   def already_liked?(chat)
     self.likes.exists?(chat_id: chat.id)
