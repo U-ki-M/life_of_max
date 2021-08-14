@@ -32,7 +32,22 @@ html {
     color: rgb(236, 236, 234);
   }
 }
+.avatar {
+  color: tomato;
+  background-color: ivory;
+  cursor: pointer;
+  font-size: xx-large;
+  transition: .5s;
+  border: 1px solid;
+  padding-left: 20px;
+  padding-right: 20px;
+}
 
+
+.avatar:hover {
+  color: crimson;
+  
+}
 
 
 header {
@@ -62,7 +77,7 @@ header {
 }
 
 .display-name {
-  margin: 0 5px 0 0;
+  margin: 0 5px 0 10px;
   font-size: x-large;
   color: rgb(58, 58, 58);
   text-decoration: none;
@@ -95,6 +110,22 @@ header {
 
 .header-left {
  width: 38%;
+ display: flex;
+ align-items: center;
+}
+
+/* avatar プロフィール写真集*/
+.icon_image {
+  width: 50px;
+  height: 50px;
+  margin: 0 20px 0 20px;
+  border-radius: 100px;
+  object-fit: cover;
+}
+/* if no avatar プロフ写真ない時*/
+.icon_awsome {
+  font-size: 45px;
+  margin: 0 20px 0 20px;
 }
 
 .header-right{
