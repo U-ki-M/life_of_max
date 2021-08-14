@@ -59,13 +59,14 @@ email: cooper@gmail.com<br>
 
 - ***トップページ***
   - ボタン
-    - プロフィールへの遷移ボタン
-    - ギャラリーへの遷移ボタン
-    - チャット（コメント投稿）ページへの遷移ボタン
-    - コンタクトフォームへの遷移ボタン（未実装）
+    - ハンバーガーメニュー
+      - プロフィールへの遷移ボタン
+      - ギャラリーへの遷移ボタン
+      - チャット（コメント投稿）ページへの遷移ボタン
+      - コンタクトフォームへの遷移ボタン（未実装）
   - 表示
     - 左側にメニュー表示
-    - 全体画面（バックグラウンド）に動画のはめこみ
+    - バックグラウンドにgifのはめこみ
 
 - ***ユーザー登録 （新規登録ページ）***
   - ボタン
@@ -146,7 +147,11 @@ email: cooper@gmail.com<br>
 
 ## 機能紹介 &nbsp; (画像/Gif)
 **トップページ**<br>
-[![Image from Gyazo](https://i.gyazo.com/c30e04bd36491c49d1f2335690dff2c8.gif)](https://gyazo.com/c30e04bd36491c49d1f2335690dff2c8)
+【ハンバーガーメニュー　オープン前】
+[![Image from Gyazo](https://i.gyazo.com/81850a7838099a3d6117ac48ad5d881c.jpg)](https://gyazo.com/81850a7838099a3d6117ac48ad5d881c)
+
+【ハンバーガーメニュー　オープン後】
+[![Image from Gyazo](https://i.gyazo.com/ad8957c9778414cdf5d8e46c07a1e367.jpg)](https://gyazo.com/ad8957c9778414cdf5d8e46c07a1e367)
 
 **ユーザー機能**<br>
 [![Image from Gyazo](https://i.gyazo.com/3790afdc022fac8d9ffe26054a199ccc.gif)](https://gyazo.com/3790afdc022fac8d9ffe26054a199ccc)
