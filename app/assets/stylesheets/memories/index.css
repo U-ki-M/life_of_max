@@ -34,16 +34,6 @@ html {
 }
 
 
-video {
-  z-index: -1;
-	position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    object-position: center;
-}
 
 header {
 	width: 100%;
@@ -67,14 +57,14 @@ header {
 .logout-icon {
   margin: 0 5px 0 20px;
   font-size: x-large;
-  color: gray;
+  color: rgb(63, 63, 63);
   text-decoration: none;
 }
 
 .display-name {
   margin: 0 5px 0 0;
   font-size: x-large;
-  color: gray;
+  color: rgb(58, 58, 58);
   text-decoration: none;
 }
 
@@ -132,43 +122,33 @@ header {
 .welcome {
   margin-left: 30px;
   font-size: 17px;
-  color:rgb(80, 79, 79);
+  color:rgb(46, 45, 45);
 }
 
 .main {
   width: 100%;
 	height: 80vh;
+  background-image: url("/maxgif.gif");
+  background-color:rgba(255, 255, 255, 0.26);
+  background-blend-mode:lighten;
+  background-size: cover;
+  object-position: center;
 }
 .section {
   width: 100%;
-  height: 80vh;
-	background-color: transparent;
-	display: flex;
+  height: 100%;
 }
-
-.menu-left {
-  margin: 20px;
-	width: 25%;
-  background-color:rgba(255, 255, 255, 0.267);;
-	border-top-left-radius: 40px;
-  border-top-right-radius: 40px;
-  border-bottom-right-radius: 40px;
-  border-bottom-left-radius: 40px;
-	overflow: scroll;
-}
-
-
 
 .menu {
-  margin: 20px 0;
   list-style: none;
   font-family: 'Style Script', cursive;
-  font-size: 35px;
+  font-size: 30px;
   text-align: center;
+ 
 }
 
 .menu_link {
-	padding: 5px 5px 5px 5px;
+	padding: 0px 5px 0px 5px;
 	text-shadow: 0 3px 3px rgb(202, 199, 226);
 	color: rgba(255, 255, 255, 0.699);
   text-decoration: none;
@@ -176,8 +156,8 @@ header {
 }
 
 .menu_link:hover {
-	color: rgb(245, 245, 127);
-	text-shadow: 0 8px 5px rgb(56, 47, 112);
+	color: rgb(250, 250, 246);
+	text-shadow: 0 5px 5px rgb(152, 255, 246);
 	transition: text-shadow .9s, color .7s;
 }
 
@@ -198,7 +178,7 @@ header {
 
 .footer1 {
   margin-left: 155px;
-  background-color: rgba(240, 255, 255, 0.1);
+  background-color: rgba(240, 255, 255, 0.164);
   border-top-left-radius: 40px;
   border-top-right-radius: 40px;
   border-bottom-right-radius: 40px;
@@ -222,7 +202,7 @@ header {
 
 .ig-icon {
   margin-left: 30px;
-  color:rgba(255, 180, 245, 0.521);
+  color:rgba(255, 170, 244, 0.658);
   font-size: xx-large;
 }
 
@@ -235,7 +215,70 @@ header {
   color:rgba(255, 255, 255, 0.521);
 }
 
-/* contack form CSS */
+.menu-trigger {
+  margin: 30px 0 0 30px;
+  display: inline-block;
+  position: relative;
+  width: 36px;
+  height: 28px;
+  vertical-align: middle;
+  cursor: pointer;
+}
+.menu-trigger span {
+  z-index: 20;
+  display: inline-block;
+  box-sizing: border-box;
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  background-color: rgb(65, 64, 64);
+  transition: all .5s .2s;
+}
+.menu-trigger.active span {
+  background-color: rgb(65, 59, 52);
+}
+.menu-trigger span:nth-of-type(1) {
+  top: 0;
+}
+.menu-trigger.active span:nth-of-type(1) {
+  transform: translateY(12px) rotate(-45deg);
+}
+.menu-trigger span:nth-of-type(2) {
+  top: 12px;
+}
+.menu-trigger.active span:nth-of-type(2) {
+  opacity: 0;
+}
+.menu-trigger span:nth-of-type(3) {
+  bottom: 0;
+}
+.menu-trigger.active span:nth-of-type(3) {
+  transform: translateY(-12px) rotate(45deg);
+}
+nav {
+  margin-top: 10vh;
+  margin-left: 90px;
+  width: 15%;
+  height: 80vh;
+  background-color: rgba(82, 82, 82, 0.7);
+  color: #fff;
+  text-align: center;
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 5;
+  overflow: scroll;
+}
+nav ul {
+  padding: 10px 0;
+}
+nav ul li {
+  padding: 15px 0;
+}
+
+/* contact form CSS */
 .chat-main iframe {
   width: 100%;
   height: 100%;
