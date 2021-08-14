@@ -46,7 +46,7 @@ email: cooper@gmail.com<br>
     - ユーザー名（クリックして編集と削除ページへ遷移)
   - 表示
     - Webのロゴ
-    - ログイン中のユーザー名
+    - ログイン中のユーザーアバター写真とユーザー名
     - 新規登録/ログイン/ログアウトのボタン表示
     - 新規登録/ログイン・アウトでフラッシュメッセージを一時的に表示
 
@@ -113,6 +113,7 @@ email: cooper@gmail.com<br>
     - コメント記入フォーム
     - 全コメント一覧（最新の15件のコメントのみに制限）
     - コメントの日付
+    - 投稿ユーザーのプロフィール写真
     - 投稿ユーザー名
     - 投稿内容
     - いいねボタンといいね合計件数
@@ -132,13 +133,13 @@ email: cooper@gmail.com<br>
       - いいねの合計件数
       - ゴミ箱マーク
 
-  - ***コメント投稿ルーム &nbsp; (いいねページ)***
-   - ボタン
-      - 投稿管理ページへ遷移するボタン
-   - 表示
-      - 該当のコメントを表示
-      - このコメントの合計いいね数
-      - このコメントにいいねを付けたユーザー名の一覧
+- ***コメント投稿ルーム &nbsp; (いいねページ)***
+ - ボタン
+    - 投稿管理ページへ遷移するボタン
+ - 表示
+    - 該当のコメントを表示
+    - このコメントの合計いいね数 
+    - いいねを付けたユーザープロフィール写真と名前の一覧
 
 - ***問い合わせフォーム***
   - 名前、メールアドレス、タイトル、内容、タイトル以外の３点の情報入力必須
@@ -148,32 +149,38 @@ email: cooper@gmail.com<br>
 ## 機能紹介 &nbsp; (画像/Gif)
 **トップページ**<br>
 【ハンバーガーメニュー　オープン前】
-[![Image from Gyazo](https://i.gyazo.com/81850a7838099a3d6117ac48ad5d881c.jpg)](https://gyazo.com/81850a7838099a3d6117ac48ad5d881c)
+[![Image from Gyazo](https://i.gyazo.com/53e5e4dea2c70079efcc274db449b2bc.jpg)](https://gyazo.com/53e5e4dea2c70079efcc274db449b2bc)
 
 【ハンバーガーメニュー　オープン後】
-[![Image from Gyazo](https://i.gyazo.com/ad8957c9778414cdf5d8e46c07a1e367.jpg)](https://gyazo.com/ad8957c9778414cdf5d8e46c07a1e367)
+[![Image from Gyazo](https://i.gyazo.com/3d299d1c3c582942d4b7dd89c784aa1d.gif)](https://gyazo.com/3d299d1c3c582942d4b7dd89c784aa1d)
 
 **ユーザー機能**<br>
-[![Image from Gyazo](https://i.gyazo.com/3790afdc022fac8d9ffe26054a199ccc.gif)](https://gyazo.com/3790afdc022fac8d9ffe26054a199ccc)
+[![Image from Gyazo](https://i.gyazo.com/5690ccc65fd30e349a45607af43af38c.gif)](https://gyazo.com/5690ccc65fd30e349a45607af43af38c)
+
+**ユーザー機能**<br>
+【アバター写真の無し】<br>
+[![Image from Gyazo](https://i.gyazo.com/93d8105ec6173c510a6c087593620d72.png)](https://gyazo.com/93d8105ec6173c510a6c087593620d72)<br>
+【アバター写真の有り】<br>
+[![Image from Gyazo](https://i.gyazo.com/ccde5ff58b51f2b4402a5a0384bdb775.png)](https://gyazo.com/ccde5ff58b51f2b4402a5a0384bdb775)
 
 **プロフィール (非同期 言語切り替え)**<br>
-[![Image from Gyazo](https://i.gyazo.com/24d9ee1c51edb8e4f21e2ae347877611.gif)](https://gyazo.com/24d9ee1c51edb8e4f21e2ae347877611)
+[![Image from Gyazo](https://i.gyazo.com/294e6d9cd847140b31e54d640c05becb.gif)](https://gyazo.com/294e6d9cd847140b31e54d640c05becb)
 
 **ギャラリー**<br>
 [![Image from Gyazo](https://i.gyazo.com/3d68455b9bc60ca880668d99abc395bd.gif)](https://gyazo.com/3d68455b9bc60ca880668d99abc395bd)
 [![Image from Gyazo](https://i.gyazo.com/3383dbf45916a501e6e22227b03be954.gif)](https://gyazo.com/3383dbf45916a501e6e22227b03be954)
 
 **チャット（投稿一覧/コメント投稿/コメント削除）**<br>
-[![Image from Gyazo](https://i.gyazo.com/9484f2ef583b3f63a4264ad46987734f.gif)](https://gyazo.com/9484f2ef583b3f63a4264ad46987734f)
+[![Image from Gyazo](https://i.gyazo.com/540773e895359b9bc8ad32b5e26e0c00.gif)](https://gyazo.com/540773e895359b9bc8ad32b5e26e0c00)
 
 **チャット（自身の投稿一覧/いいね数/削除）**<br>
-[![Image from Gyazo](https://i.gyazo.com/42117291c0b7bb51706f981347cc1b66.gif)](https://gyazo.com/42117291c0b7bb51706f981347cc1b66)
+[![Image from Gyazo](https://i.gyazo.com/a473b4f8885bbb840b972f2004056988.gif)](https://gyazo.com/a473b4f8885bbb840b972f2004056988)
 
 **チャット（いいねAjax 非同期通信）**<br>
-[![Image from Gyazo](https://i.gyazo.com/fd0c6346be49d66938455b1bf0ec47b9.gif)](https://i.gyazo.com/fd0c6346be49d66938455b1bf0ec47b9)
+[[![Image from Gyazo](https://i.gyazo.com/0649d948b4a99cf3da904f556695bd35.gif)](https://gyazo.com/0649d948b4a99cf3da904f556695bd35)
 
 **チャット（いいねをしたユーザー表示）**<br>
-[![Image from Gyazo](https://i.gyazo.com/d6c8022325afe97feb967bdee0e1a399.gif)](https://gyazo.com/d6c8022325afe97feb967bdee0e1a399)
+[![Image from Gyazo](https://i.gyazo.com/090ecc01cc6bb2f16c8433b07f41283b.gif)](https://gyazo.com/090ecc01cc6bb2f16c8433b07f41283b)
 
 **問い合わせフォーム**
 [![Image from Gyazo](https://i.gyazo.com/6c7ab21eea4beffba8a2702500ab0f3a.gif)](https://gyazo.com/6c7ab21eea4beffba8a2702500ab0f3a)
@@ -194,14 +201,14 @@ email: cooper@gmail.com<br>
 | first_name         | string  | null: false               |
 | email              | string  | null: false, unique: true |
 | encrypted_password | string  | null: false               |
-
-
+(UserアバターimageはActiveStorageを使用)
 
 ### Association
 
 has_many :chats, dependent: :destroy<br>
 has_many :likes, dependent: :destroy<br>
 has_many :liked_chats, through: :likes, source: :chat<br>
+has_one_attached :image
 
 ## chats テーブル
 
