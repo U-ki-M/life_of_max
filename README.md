@@ -14,7 +14,7 @@
 <li>お問い合わせフォームを設けて不便に感じている事を解消<br>
 &nbsp; &nbsp; &nbsp;- IGの運営者は別人で国外にいる、尚且つ非日本語話者<br>
 &nbsp; &nbsp; &nbsp;- 外国経由での企業とのやりとりに不便を感じていた<br>
-&nbsp; &nbsp; &nbsp;- 依頼を直接受理する事で無駄なやりとりが減る<br>
+&nbsp; &nbsp; &nbsp;- 依頼を直接受理する事で無駄なやりとりを減少<br>
 <br>
 
 ## URL
@@ -178,7 +178,7 @@ email: cooper@gmail.com<br>
 [![Image from Gyazo](https://i.gyazo.com/a473b4f8885bbb840b972f2004056988.gif)](https://gyazo.com/a473b4f8885bbb840b972f2004056988)
 
 **チャット（いいねAjax 非同期通信）**<br>
-[[![Image from Gyazo](https://i.gyazo.com/0649d948b4a99cf3da904f556695bd35.gif)](https://gyazo.com/0649d948b4a99cf3da904f556695bd35)
+[![Image from Gyazo](https://i.gyazo.com/0649d948b4a99cf3da904f556695bd35.gif)](https://gyazo.com/0649d948b4a99cf3da904f556695bd35)
 
 **チャット（いいねをしたユーザー表示）**<br>
 [![Image from Gyazo](https://i.gyazo.com/090ecc01cc6bb2f16c8433b07f41283b.gif)](https://gyazo.com/090ecc01cc6bb2f16c8433b07f41283b)
