@@ -77,15 +77,19 @@ email: cooper@gmail.com<br>
 
 - ***ユーザー登録 （ログインページ）***
   - ボタン
+    - アバター画像アップロード
     - ログイン送信ボタン
   - 表示
+    - アップロード前の画像のプレビュー
     - ログイン用フォーム
 
 - ***ユーザー登録 （編集ページ）***
   - ボタン
+    - アバター画像アップロード（変更）
     - アップデートボタン
     - アカウント削除ボタン
   - 表示
+    - アップロード前の画像のプレビュー
     - アップデート用フォーム
   
 - ***プロフィール***
@@ -155,8 +159,11 @@ email: cooper@gmail.com<br>
 【ハンバーガーメニュー　オープン後】<br>
 [![Image from Gyazo](https://i.gyazo.com/3d299d1c3c582942d4b7dd89c784aa1d.gif)](https://gyazo.com/3d299d1c3c582942d4b7dd89c784aa1d)
 
-**ユーザー機能**<br>
-[![Image from Gyazo](https://i.gyazo.com/5690ccc65fd30e349a45607af43af38c.gif)](https://gyazo.com/5690ccc65fd30e349a45607af43af38c)
+**ユーザー機能(新規登録・情報編集)**<br>
+【新規登録、画像プレビュー】<br>
+[![Image from Gyazo](https://i.gyazo.com/2c783e9050524e6e4c571e0ab3ac0eac.png)](https://gyazo.com/2c783e9050524e6e4c571e0ab3ac0eac)<br>
+【ユーザー編集、画像プレビュー】<br>
+[![Image from Gyazo](https://i.gyazo.com/e63c502c17f961d379348da00ef4bf91.png)](https://gyazo.com/e63c502c17f961d379348da00ef4bf91)<br>
 
 **ユーザー機能**<br>
 【アバター写真無し】<br>

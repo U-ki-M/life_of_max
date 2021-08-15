@@ -52,3 +52,18 @@
   box-shadow    : none;
   opacity       : 0.8;
 }
+
+
+.side {
+  display: flex;
+  justify-content: center;
+}
+
+#image-list img{
+  height: auto;
+  width: 100%;
+  width: 60px;
+  height: 60px;
+  border-radius: 100px;
+  object-fit: cover;
+}

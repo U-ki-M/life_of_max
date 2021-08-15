@@ -7,10 +7,13 @@
   <div class="form-header"><p>Sign up to join "Chat about Max"<br>新規登録をしてChat about Maxに参加</p>
 
   </div>
-  <div class="field">
-    <%= f.label :image do %> Profile Photo / 写真を選択<br><span class="avatar"><i class="far fa-user-circle"></i></span>
-     <%= f.file_field :image, style:"display: none;" %>
-    <% end %>
+  <div class="side">
+    <div class="field">
+      <%= f.label :image do %> Profile Photo / 写真を選択<br>
+      <%= f.file_field :image, id:"message_image" %>
+      <% end %>
+    </div>
+    <div id="image-list"></div>
   </div>
 
   <div class="field">
