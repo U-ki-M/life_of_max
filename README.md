@@ -159,9 +159,9 @@ email: cooper@gmail.com<br>
 [![Image from Gyazo](https://i.gyazo.com/5690ccc65fd30e349a45607af43af38c.gif)](https://gyazo.com/5690ccc65fd30e349a45607af43af38c)
 
 **ユーザー機能**<br>
-【アバター写真の無し】<br>
+【アバター写真無し】<br>
 [![Image from Gyazo](https://i.gyazo.com/93d8105ec6173c510a6c087593620d72.png)](https://gyazo.com/93d8105ec6173c510a6c087593620d72)<br>
-【アバター写真の有り】<br>
+【アバター写真有り】<br>
 [![Image from Gyazo](https://i.gyazo.com/ccde5ff58b51f2b4402a5a0384bdb775.png)](https://gyazo.com/ccde5ff58b51f2b4402a5a0384bdb775)
 
 **プロフィール (非同期 言語切り替え)**<br>
