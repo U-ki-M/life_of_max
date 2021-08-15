@@ -149,10 +149,10 @@ email: cooper@gmail.com<br>
 
 ## 機能紹介 &nbsp; (画像/Gif)
 **トップページ**<br>
-【ハンバーガーメニュー　オープン前】
+【ハンバーガーメニュー　オープン前】<br>
 [![Image from Gyazo](https://i.gyazo.com/53e5e4dea2c70079efcc274db449b2bc.jpg)](https://gyazo.com/53e5e4dea2c70079efcc274db449b2bc)
 
-【ハンバーガーメニュー　オープン後】
+【ハンバーガーメニュー　オープン後】<br>
 [![Image from Gyazo](https://i.gyazo.com/3d299d1c3c582942d4b7dd89c784aa1d.gif)](https://gyazo.com/3d299d1c3c582942d4b7dd89c784aa1d)
 
 **ユーザー機能**<br>
