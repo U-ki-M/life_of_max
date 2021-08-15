@@ -32,22 +32,6 @@ html {
     color: rgb(236, 236, 234);
   }
 }
-.avatar {
-  color: tomato;
-  background-color: rgb(247, 247, 218);
-  cursor: pointer;
-  font-size: xx-large;
-  transition: .5s;
-  border: 1px solid;
-  padding-left: 20px;
-  padding-right: 20px;
-}
-
-.avatar:hover {
-  text-shadow: 0 2px 2px lightslategray;
-  box-shadow: 0 2px 7px lightslategray;
-  background-color: rgb(250, 250, 227);
-}
 
 
 header {
