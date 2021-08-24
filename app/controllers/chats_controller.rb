@@ -1,15 +1,14 @@
 class ChatsController < ApplicationController
   before_action :authenticate_user!, only: [:index, :create, :destroy, :show]
+  before_action :set_item, only: [:index, :create, :show, :who]
 
   def index
     @chat = Chat.new
-    @user = current_user
     @chats = Chat.all.order('created_at DESC')
   end
 
   def create
     @chats = Chat.all.order('created_at DESC')
-    @user = current_user
     @chat = Chat.new(chat_params)
     @chat.save
     if @chat.save
@@ -27,12 +26,10 @@ class ChatsController < ApplicationController
 
 
   def show
-    @user = current_user
     @chat = @user.chats.order('created_at DESC')
   end
 
   def who
-    @user = current_user
     @chat = Chat.find(params[:id])
     @like = Like.new
   end
@@ -42,4 +39,9 @@ class ChatsController < ApplicationController
   def chat_params
     params.require(:chat).permit(:content).merge(user_id: current_user.id)
   end
+
+  def set_item
+    @user = current_user
+  end
+
 end
