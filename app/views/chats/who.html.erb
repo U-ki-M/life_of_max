@@ -7,12 +7,9 @@
     <span id="thumb"> <i class="far fa-thumbs-up"></i> </span><i class="fas fa-times"></i> <%= @chat.liked_users.count %>
     </div>
 
-    
-
      <div class="heading">
       Who liked this comment? いいねしてくれたユーザー
      </div>
-
     
      <% @chat.liked_users.each do |user| %>
        <div class="who-main">
